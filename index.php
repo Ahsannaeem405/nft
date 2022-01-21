@@ -34,7 +34,7 @@
     <nav class="navbar navbar-expand-lg sticky-top">
 
         <a class="navbar-brand" href="#">
-            <img src="./img/logo.png" alt="logo-pic"/>
+            <img src="./img/logo.png" alt="logo-pic" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,7 +105,7 @@
                                             <div class="header-card-head">
                                                 <h5><i class="fas fa-chart-line mr-2 text-warning"></i>MarketCap
                                                     change(24H)</h5>
-                                                <button>More <span class="ml-2 text-muted"> ></span></button>
+                                                <button>More <span class="ml-2 text-info"> ></span></button>
                                             </div>
                                             <div class="header-card-body">
                                                 <ul class="list-group">
@@ -392,7 +392,8 @@
         </div>
     </div>
     <!--Home page silder end-->
-    <div class="container my-3">
+    <!--top collection start-->
+    <div class="container my-5">
         <div class="row">
             <div class="col-12">
                 <div class="top-collection">
@@ -414,7 +415,12 @@
                                             <span>Avator</span>
                                         </div>
                                         <p class="card-title">
-                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z"><path d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z" fill="#8A8A8A"></path></svg>
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z">
+                                                <path
+                                                    d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                    fill="#8A8A8A"></path>
+                                            </svg>
                                             ETH
                                         </p>
                                     </div>
@@ -444,7 +450,12 @@
                                             <span>Avator</span>
                                         </div>
                                         <p class="card-title">
-                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z"><path d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z" fill="#8A8A8A"></path></svg>
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z">
+                                                <path
+                                                    d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                    fill="#8A8A8A"></path>
+                                            </svg>
                                             ETH
                                         </p>
                                     </div>
@@ -474,7 +485,12 @@
                                             <span>Avator</span>
                                         </div>
                                         <p class="card-title">
-                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z"><path d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z" fill="#8A8A8A"></path></svg>
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z">
+                                                <path
+                                                    d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                    fill="#8A8A8A"></path>
+                                            </svg>
                                             ETH
                                         </p>
                                     </div>
@@ -504,7 +520,12 @@
                                             <span>Avator</span>
                                         </div>
                                         <p class="card-title">
-                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z"><path d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z" fill="#8A8A8A"></path></svg>
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z">
+                                                <path
+                                                    d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                    fill="#8A8A8A"></path>
+                                            </svg>
                                             ETH
                                         </p>
                                     </div>
@@ -534,7 +555,12 @@
                                             <span>Avator</span>
                                         </div>
                                         <p class="card-title">
-                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z"><path d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z" fill="#8A8A8A"></path></svg>
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z">
+                                                <path
+                                                    d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                    fill="#8A8A8A"></path>
+                                            </svg>
                                             ETH
                                         </p>
                                     </div>
@@ -564,7 +590,12 @@
                                             <span>Avator</span>
                                         </div>
                                         <p class="card-title">
-                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z"><path d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z" fill="#8A8A8A"></path></svg>
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z">
+                                                <path
+                                                    d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                    fill="#8A8A8A"></path>
+                                            </svg>
                                             ETH
                                         </p>
                                     </div>
@@ -594,7 +625,12 @@
                                             <span>Avator</span>
                                         </div>
                                         <p class="card-title">
-                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z"><path d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z" fill="#8A8A8A"></path></svg>
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z">
+                                                <path
+                                                    d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                    fill="#8A8A8A"></path>
+                                            </svg>
                                             ETH
                                         </p>
                                     </div>
@@ -624,7 +660,12 @@
                                             <span>Avator</span>
                                         </div>
                                         <p class="card-title">
-                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z"><path d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z" fill="#8A8A8A"></path></svg>
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z">
+                                                <path
+                                                    d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                    fill="#8A8A8A"></path>
+                                            </svg>
                                             ETH
                                         </p>
                                     </div>
@@ -644,8 +685,246 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--top collection end-->
+    <!--explore nft-->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="explore-nft">
+                    <div class="explore-nft-header">
+                        <h2>Explore NFTs</h2>
+                        <div>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                    <div class="explore-nftbody">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
+                                <a href="#">
+                                    <div class="explore-card mt-3 mx-3">
+                                        <div class="explore-card-img">
+                                            <img src="./img/black-logo.jpg" />
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="explore-card-body m-3">
+                                            <h5>The Wolfgang</h5>
+                                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                                <div class="explore-card-bodyimg">
+                                                    <img
+                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        class="project-card_icon__3yC3z mx-2">
+                                                        <path
+                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                            fill="#8A8A8A"></path>
+                                                    </svg>
+                                                </div>
+                                                <span>0.023ETH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
+                                <a href="#">
+                                    <div class="explore-card mt-3 mx-3">
+                                        <div class="explore-card-img">
+                                            <img src="./img/black-logo.jpg" />
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="explore-card-body m-3">
+                                            <h5>The Wolfgang</h5>
+                                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                                <div class="explore-card-bodyimg">
+                                                    <img
+                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        class="project-card_icon__3yC3z mx-2">
+                                                        <path
+                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                            fill="#8A8A8A"></path>
+                                                    </svg>
+                                                </div>
+                                                <span>0.023ETH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
+                                <a href="#">
+                                    <div class="explore-card mt-3 mx-3">
+                                        <div class="explore-card-img">
+                                            <img src="./img/black-logo.jpg" />
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="explore-card-body m-3">
+                                            <h5>The Wolfgang</h5>
+                                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                                <div class="explore-card-bodyimg">
+                                                    <img
+                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        class="project-card_icon__3yC3z mx-2">
+                                                        <path
+                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                            fill="#8A8A8A"></path>
+                                                    </svg>
+                                                </div>
+                                                <span>0.023ETH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
+                                <a href="#">
+                                    <div class="explore-card mt-3 mx-3">
+                                        <div class="explore-card-img">
+                                            <img src="./img/black-logo.jpg" />
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="explore-card-body m-3">
+                                            <h5>The Wolfgang</h5>
+                                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                                <div class="explore-card-bodyimg">
+                                                    <img
+                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        class="project-card_icon__3yC3z mx-2">
+                                                        <path
+                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                            fill="#8A8A8A"></path>
+                                                    </svg>
+                                                </div>
+                                                <span>0.023ETH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
+                                <a href="#">
+                                    <div class="explore-card mt-3 mx-3">
+                                        <div class="explore-card-img">
+                                            <img src="./img/black-logo.jpg" />
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="explore-card-body m-3">
+                                            <h5>The Wolfgang</h5>
+                                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                                <div class="explore-card-bodyimg">
+                                                    <img
+                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        class="project-card_icon__3yC3z mx-2">
+                                                        <path
+                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                            fill="#8A8A8A"></path>
+                                                    </svg>
+                                                </div>
+                                                <span>0.023ETH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
+                                <a href="#">
+                                    <div class="explore-card mt-3 mx-3">
+                                        <div class="explore-card-img">
+                                            <img src="./img/black-logo.jpg" />
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="explore-card-body m-3">
+                                            <h5>The Wolfgang</h5>
+                                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                                <div class="explore-card-bodyimg">
+                                                    <img
+                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        class="project-card_icon__3yC3z mx-2">
+                                                        <path
+                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                            fill="#8A8A8A"></path>
+                                                    </svg>
+                                                </div>
+                                                <span>0.023ETH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
+                                <a href="#">
+                                    <div class="explore-card mt-3 mx-3">
+                                        <div class="explore-card-img">
+                                            <img src="./img/black-logo.jpg" />
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="explore-card-body m-3">
+                                            <h5>The Wolfgang</h5>
+                                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                                <div class="explore-card-bodyimg">
+                                                    <img
+                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        class="project-card_icon__3yC3z mx-2">
+                                                        <path
+                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                            fill="#8A8A8A"></path>
+                                                    </svg>
+                                                </div>
+                                                <span>0.023ETH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
+                                <a href="#">
+                                    <div class="explore-card mt-3 mx-3">
+                                        <div class="explore-card-img">
+                                            <img src="./img/black-logo.jpg" />
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="explore-card-body m-3">
+                                            <h5>The Wolfgang</h5>
+                                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                                <div class="explore-card-bodyimg">
+                                                    <img
+                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        class="project-card_icon__3yC3z mx-2">
+                                                        <path
+                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
+                                                            fill="#8A8A8A"></path>
+                                                    </svg>
+                                                </div>
+                                                <span>0.023ETH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -654,24 +933,94 @@
     </div>
     <!--home page end-->
 
-<!--footer blcok start-->
-<div class="container-fluid footer mt-5">
-    <div class="row p-5">
-        <div class="col-4 px-5">
-            <a href="#">
-               <h2>E-Coin</h2> 
-            </a>
-            <h5 class="mt-5">Join Our Community</h5>
-            <div class="footer-icons">
-                
+    <!--footer blcok start-->
+    <div class="container-fluid footer">
+        <div class="row p-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 py-5">
+                <a href="#" class="footer-logo">
+                    <img src="./img/logo.png" />
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 py-5 d-flex justify-content-around">
+                <div class="footer-links">
+                    <div>
+                        <h4 class="pb-2 "> Links</h4>
+                        <a href="#">
+                            Home
+                        </a>
+                        <br/>
+                        <br/>
+                        <a href="#">
+                            About Us
+                        </a>
+                        <br/>
+                        <br/>
+                        <a href="#">
+                            contact Us
+                        </a>
+                        <br/>
+                        <br/>
+                        <a href="#">
+                            Upcoming
+                        </a>     
+                    </div>
+                </div>
+                <div class="footer-links ">
+                    <div>
+                        <h4 class="pb-2"> Supports</h4>
+                        <a href="#">
+                            FQA
+                        </a>
+                        <br/>
+                        <br/>
+                        <a href="#">
+                            Terms and Conditions
+                        </a>
+                        <br/>
+                        <br/>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                        <br/>
+                        <br/>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-5">
+                <div class="get-touch">
+                    <h3> Get In Touch</h3>
+                </div>
+                <div class="footer-icons my-3">
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="add-newletter mt-4">
+                    <p>Get the latest crypto news, updates, and reports by subscribing to our free newsletter.</p>
+                    <form>
+                        <input type="email" placeholder="Enter Your Email" class="form-control" />
+                        <input type="submit" class="footer-submit mt-3" />
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="col-8">
-
-        </div>
     </div>
-</div>
-<!--footer block end-->
+    <!--footer block end-->
     <!-- Jquery bootstrap script -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -693,9 +1042,6 @@
             nav: false,
             dots: false,
             autoplay: true,
-            autoplayTimeout: 3000,
-            animateOut: 'fadeOut',
-            animateIn: 'fadeUp',
             autoplayHoverPause: true,
             responsive: {
                 0: {
@@ -718,6 +1064,7 @@
             autoplay: true,
             dots: false,
             nav: false,
+            autoplayTimeout:2000,
             responsive: {
                 0: {
                     items: 1
