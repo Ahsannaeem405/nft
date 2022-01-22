@@ -1,0 +1,71 @@
+body{
+    background-color: #F5F6F7;
+}
+.signup-logo-side{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/NFT\ Sentiment.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+}
+.signup-logo-side img{
+    width: 100%;
+    height: auto;
+}
+.login-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-form-side{
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px 70px;
+    border-radius: 15px;
+}
+@media screen and (max-width:1024px){
+    .signup-form-side{
+        background-color: white;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        padding: 20px 25px;
+        border-radius: 15px;
+    }
+}
+.login-logo{
+    width: 230px;
+}
+.login-logo img{
+    width: 100%;
+    height: auto;
+}
+.signup-form-side h2{
+    font-size: 34px;
+    font-weight: 600;
+    font-family: 'PT Serif', serif;
+}
+.signup-form-side p{
+    font-size: 15px;
+    font-weight: 400;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.signup-form-side .form-group .form-control{
+    border-radius: 1rem;
+    height: 3rem!important;
+    padding: 21px 24px;
+    margin: 1.5rem 0.5rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.signup-form-side .form-group .form-control:focus{
+    box-shadow: none;
+    background-color: #F5F6F7;
+}
+.submit-btn{
+    border-radius: 1rem!important;
+    height: 46px!important;
+    color: white;
+    background-color: #53B9F3;
+}
+.signup-form-side a{
+    color: green;
+}

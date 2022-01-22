@@ -63,7 +63,7 @@
                     <i class="fas fa-sign-out-alt"></i>
                     Sign up
                 </a>
-                <a href="#" class="login-link">
+                <a href="login.php" class="login-link">
                     Login
                 </a>
             </div>
