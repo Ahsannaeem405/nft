@@ -32,7 +32,9 @@ body{
 }
 @media screen and (max-width:510px){
     .navbar-brand{
-        background-color: red;
+        padding: 0 5px;
+    }
+     .navbar-brand{
         padding: 0 5px;
     }
     .navbar{

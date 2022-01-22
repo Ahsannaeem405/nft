@@ -44,7 +44,7 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active mx-2">
+                <li class="nav-item  mx-2">
                     <a class="nav-link" href="/ntf">Home</a>
                 </li>
                 <li class="nav-item mx-2">
@@ -52,9 +52,9 @@
                     <a class="nav-link" href="#">News letter</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="/ntf/contact.php">Contact</a>
                 </li>
-                <li class="nav-item mx-2">
+                <li class="nav-item active mx-2">
                     <a class="nav-link" href="/ntf/upcoming.php">Upcoming</a>
                 </li>
             </ul>
@@ -665,6 +665,15 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <!-- owl carousal jquery-->
+    <script>
+        var popup = document.getElementById("add-project").style;
+        function openForm() {
+            popup.display = "block";
+        }
+        function closeForm() {
+            popup.display = "none";
+        }
+        </script>
 </body>
 
 </html>

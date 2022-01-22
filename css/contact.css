@@ -1,0 +1,20 @@
+.contact-form{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+.contact-form button{
+    background-color: #53B9F3;
+    border: 1px solid #53B9F3;
+    font-size: 18px;
+}
+
+.contact-help h3{
+    font-size: 34px;
+    padding: 5px 0px;
+    color: #53B9F3;
+}
+.contact-help p{
+    font-size: 20px;
+    line-height: 26px;
+}
