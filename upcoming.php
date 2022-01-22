@@ -33,7 +33,7 @@
     <!--Nav Bar start-->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light">
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/ntf">
             <img src="./img/logo.png" alt="logo-pic" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
@@ -559,7 +559,7 @@
     <div class="container-fluid footer">
         <div class="row p-1 p-sm-5 p-lg-2 p-xl-5">
             <div class="col-lg-4 col-md-6 col-sm-12 py-3 py-md-5 d-flex align-items-center justify-content-center">
-                <a href="#" class="footer-logo ">
+                <a href="/ntf" class="footer-logo ">
                     <img src="./img/logo.png" />
                 </a>
             </div>
