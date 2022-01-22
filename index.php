@@ -31,7 +31,7 @@
 
 <body>
     <!--Nav Bar start-->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
 
         <a class="navbar-brand" href="#">
             <img src="./img/logo.png" alt="logo-pic" />
@@ -45,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active mx-2">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="/ntf">Home</a>
                 </li>
                 <li class="nav-item mx-2">
 
@@ -55,7 +55,7 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Upcoming</a>
+                    <a class="nav-link" href="/ntf/upcoming.php">Upcoming</a>
                 </li>
             </ul>
             <div class="nav-right">
@@ -97,7 +97,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-7 col-lg-6 col-12">
+                        <div class="col-md-7 col-lg-6 col-12 p-0 px-md-3">
                             <div class="headerblock-right">
                                 <div class="owl-carousel1 owl-carousel owl-theme">
                                     <div class="item mx-3">
@@ -935,58 +935,13 @@
 
     <!--footer blcok start-->
     <div class="container-fluid footer">
-        <div class="row p-5">
-            <div class="col-lg-4 col-md-6 col-sm-12 py-5">
-                <a href="#" class="footer-logo">
+        <div class="row p-1 p-sm-5 p-lg-2 p-xl-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 py-3 py-md-5 d-flex align-items-center justify-content-center">
+                <a href="#" class="footer-logo ">
                     <img src="./img/logo.png" />
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 py-5 d-flex justify-content-around">
-                <div class="footer-links">
-                    <div>
-                        <h4 class="pb-2 "> Links</h4>
-                        <a href="#">
-                            Home
-                        </a>
-                        <br/>
-                        <br/>
-                        <a href="#">
-                            About Us
-                        </a>
-                        <br/>
-                        <br/>
-                        <a href="#">
-                            contact Us
-                        </a>
-                        <br/>
-                        <br/>
-                        <a href="#">
-                            Upcoming
-                        </a>     
-                    </div>
-                </div>
-                <div class="footer-links ">
-                    <div>
-                        <h4 class="pb-2"> Supports</h4>
-                        <a href="#">
-                            FQA
-                        </a>
-                        <br/>
-                        <br/>
-                        <a href="#">
-                            Terms and Conditions
-                        </a>
-                        <br/>
-                        <br/>
-                        <a href="#">
-                            Privacy Policy
-                        </a>
-                        <br/>
-                        <br/>    
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 p-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 py-3 py-md-5 px-xl-5 px-1">
                 <div class="get-touch">
                     <h3> Get In Touch</h3>
                 </div>
@@ -1007,7 +962,7 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                     <a href="#">
-                        <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
                     </a>
                 </div>
                 <div class="add-newletter mt-4">
@@ -1018,6 +973,62 @@
                     </form>
                 </div>
             </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 py-3 py-md-5">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="footer-links px-4 px-lg-2 px-xl-4">
+                            <div>
+                                <h4 class="pb-2 "> Links</h4>
+                                <a href="#">
+                                    Home
+                                </a>
+                                <br/>
+                                <br/>
+                                <a href="#">
+                                    About Us
+                                </a>
+                                <br/>
+                                <br/>
+                                <a href="#">
+                                    contact Us
+                                </a>
+                                <br/>
+                                <br/>
+                                <a href="#">
+                                    Upcoming
+                                </a>     
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="footer-links px-4 px-lg-2 px-xl-4">
+                                <div>
+                                    <h4 class="pb-2"> Supports</h4>
+                                    <a href="#">
+                                        FQA
+                                    </a>
+                                    <br/>
+                                    <br/>
+                                    <a href="#">
+                                        Terms and Conditions
+                                    </a>
+                                    <br/>
+                                    <br/>
+                                    <a href="#">
+                                        Privacy Policy
+                                    </a>
+                                    <br/>
+                                    <br/>    
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <div class="col-lg-4 col-md-6 col-sm-6 py-3 py-md-5">
+                
+            </div> -->
+            
         </div>
     </div>
     <!--footer block end-->
