@@ -33,7 +33,7 @@
     <!--Nav Bar start-->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light">
 
-        <a class="navbar-brand" href="/ntf">
+        <a class="navbar-brand" href="index.php">
             <img src="./img/logo.png" alt="logo-pic" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
@@ -45,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active mx-2">
-                    <a class="nav-link" href="/ntf">Home</a>
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item mx-2">
 
@@ -937,7 +937,7 @@
     <div class="container-fluid footer">
         <div class="row p-1 p-sm-5 p-lg-2 p-xl-5">
             <div class="col-lg-4 col-md-6 col-sm-12 py-3 py-md-5 d-flex align-items-center justify-content-center">
-                <a href="/ntf" class="footer-logo ">
+                <a href="index.php" class="footer-logo ">
                     <img src="./img/logo.png" />
                 </a>
             </div>
