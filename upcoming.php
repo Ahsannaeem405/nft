@@ -52,10 +52,10 @@
                     <a class="nav-link" href="#">News letter</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="/ntf/contact.php">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact</a>
                 </li>
                 <li class="nav-item active mx-2">
-                    <a class="nav-link" href="/ntf/upcoming.php">Upcoming</a>
+                    <a class="nav-link" href="upcoming.php">Upcoming</a>
                 </li>
             </ul>
             <div class="nav-right">
