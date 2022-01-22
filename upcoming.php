@@ -43,7 +43,7 @@
 
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
                 <li class="nav-item  mx-2">
                     <a class="nav-link" href="index.php">Home</a>
                 </li>
@@ -52,13 +52,13 @@
                     <a class="nav-link" href="newsletter.php">News letter</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="contact.php">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact Us</a>
                 </li>
                 <li class="nav-item active mx-2">
                     <a class="nav-link" href="upcoming.php">Upcoming</a>
                 </li>
             </ul>
-            <div class="nav-right">
+            <!-- <div class="nav-right">
                 <a href="#" class="signup-link">
                     <i class="fas fa-sign-out-alt"></i>
                     Sign up
@@ -66,7 +66,7 @@
                 <a href="login.php" class="login-link">
                     Login
                 </a>
-            </div>
+            </div> -->
         </div>
 
     </nav>
