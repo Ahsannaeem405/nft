@@ -119,6 +119,16 @@ margin-top: 0px !important;
     padding: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 490px){
+    .block-header h3{
+        font-size: 26px !important;
+        font-weight: 500 !important;
+    }
+    .top-collection .block-header button{
+        width: 110px !important;
+        height: 30px !important;
+    }
+}
 .block-header h3{
     font-size: 32px;
     font-weight: 600;
