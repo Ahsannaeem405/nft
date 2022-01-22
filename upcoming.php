@@ -49,7 +49,7 @@
                 </li>
                 <li class="nav-item mx-2">
 
-                    <a class="nav-link" href="#">News letter</a>
+                    <a class="nav-link" href="newsletter.php">News letter</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="contact.php">Contact</a>
