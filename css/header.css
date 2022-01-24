@@ -52,8 +52,17 @@ body{
     color: black;
 }
 .nav-item a{
-    color: black;
     text-decoration: none;
+    padding: 15px 5px;
+}
+.nav-item a:hover{
+    color: #9E77F3 !important;
+}
+.navbar-nav .active{
+    border-bottom: 2px solid black;
+}
+.nav-item .nav-link{
+    
 }
 .nav-right{
     display: flex;
