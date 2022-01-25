@@ -36,13 +36,6 @@ Route::post('/upcoming/save', [App\Http\Controllers\UpcomingController::class, '
 Route::get('/upcoming', [App\Http\Controllers\UpcomingController::class, 'upcoming']);
 
 
-
-
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Route::group(['middleware' => 'auth'], function () {
 
     Route::prefix('/admin')->group(function () {
@@ -60,12 +53,15 @@ Route::group(['middleware' => 'auth'], function () {
 
 
    Route::post('/update', [App\Http\Controllers\UpcomingController::class, 'update']);
-
-
-
-
-
-
-
 });
 });
+
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
