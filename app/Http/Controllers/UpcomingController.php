@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Upcoming;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class UpcomingController extends Controller
 {
@@ -43,6 +45,8 @@ class UpcomingController extends Controller
         return back()->with('success', 'Updated Successfully');
 
      }
+
+
 
 
     public function index()
@@ -172,9 +176,10 @@ class UpcomingController extends Controller
      * @param  \App\Models\Upcoming  $upcoming
      * @return \Illuminate\Http\Response
      */
+
     public function edit(Upcoming $upcoming)
     {
-        //
+return view('admin.edit');
     }
 
     /**
@@ -184,9 +189,25 @@ class UpcomingController extends Controller
      * @param  \App\Models\Upcoming  $upcoming
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Upcoming $upcoming)
+    public function update(Request $request)
     {
-        //
+
+
+        $admin = User::find(Auth::user()->id);
+
+        $admin->name = $request->firstname;
+
+        $admin->email = $request->email;
+
+
+        if($request->password!=null)
+        {
+
+            $admin->password=Hash::make($request->password);
+        }
+
+        $admin->update();
+        return back()->with('success', 'Updated Successfully');
     }
 
     /**
