@@ -15,10 +15,10 @@ ded by the RouteServiceProvider within a group which
 |
 */
 
-Route::get('/', function () {
-    // dd(123);
-    return view('user.index');
-});
+// Route::get('/', function () {
+//     // dd(123);
+//     return view('user.index');
+// });
 
 Route::get('/', [App\Http\Controllers\UpcomingController::class, 'view_index']);
 

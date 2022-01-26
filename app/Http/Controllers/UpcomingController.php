@@ -34,10 +34,14 @@ class UpcomingController extends Controller
     //    $res=json_decode($get->body());
     //  dd(  $res);
 
+
+
      $data=Http::get('https://testnets-api.opensea.io/api/v1/assets?order_direction=desc&offset=0&limit=20');
-$data=json_decode($data->body());
-dd($data->asset);
-       dd(1);
+        $data=json_decode($data->body());
+        $data = $data->asset;
+
+        return view('user.index', compact('data'));
+
 
     }
 
