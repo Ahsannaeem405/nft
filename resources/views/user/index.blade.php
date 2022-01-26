@@ -8,6 +8,7 @@
 
     @include('user.layout.header')
 
+    @dd($data)
     <!--Nav Bar end-->
 
     <!--Home page start-->
