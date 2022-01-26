@@ -11,7 +11,7 @@
     <!--Nav Bar end-->
 
     <!--Home page start-->
-    @dd($data)
+    @dd($data->assets)
     <div class="container my-5">
         <div class="row">
             <div class="col-12">
