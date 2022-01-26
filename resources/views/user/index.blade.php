@@ -69,7 +69,7 @@
                                                             <span class="mr-2 font-weight-bold font-italic">01</span>
                                                             <img src="https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg"
                                                                 width="20" height="20" />
-                                                                <p>  {{ $datas->name}}</p>
+                                                                <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
 
                                                         </div>
                                                         <div class="value-size">
