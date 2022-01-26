@@ -8,11 +8,11 @@
 
     @include('user.layout.header')
 
-    @dd($data->bundles)
+
     <!--Nav Bar end-->
 
     <!--Home page start-->
-    @dd($data->assets)
+
     <div class="container my-5">
         <div class="row">
             <div class="col-12">
@@ -59,18 +59,23 @@
                                                             Marketcap
                                                         </div>
                                                     </li>
+                                                    @foreach ($data->assets as $datas )
+
+
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <span class="mr-2 font-weight-bold font-italic">01</span>
                                                             <img src="https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg"
-                                                                width="20" height="20" />name
+                                                                width="20" height="20" />{{ $datas->name}}
                                                         </div>
                                                         <div class="value-size">
                                                             $12,50,000.00
                                                             <div class="text-success text-right">+28.30%</div>
                                                         </div>
                                                     </li>
+
+                                                    @endforeach
                                                     {{-- <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
