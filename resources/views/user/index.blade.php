@@ -64,7 +64,7 @@
                                                     @foreach ($data->bundles->assets as $datas )
                                                     @foreach ($datas->assets as $datass )
 
-                                                    @dd()
+
 
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
