@@ -37,7 +37,7 @@
                                 </a>
                             </div>
                         </div>
-                        @dd($data)
+
                         <div class="col-md-7 col-lg-6 col-12 p-0 px-md-3">
                             <div class="headerblock-right">
                                 <div class="owl-carousel1 owl-carousel owl-theme">
@@ -60,7 +60,7 @@
                                                             Marketcap
                                                         </div>
                                                     </li>
-                                                    @foreach ($data->bundels as $datas )
+                                                    @foreach ($data->bundles as $datas )
 
 
                                                     <li
