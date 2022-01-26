@@ -61,6 +61,7 @@
                                                         </div>
                                                     </li>
                                                     @foreach ($data->bundles->assets as $datas )
+                                                    @dd($data->bundles)
 
 
                                                     <li
