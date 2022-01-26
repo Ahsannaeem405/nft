@@ -11,7 +11,7 @@
     <!--Nav Bar end-->
 
     <!--Home page start-->
-    {{-- @dd($data) --}}
+    @dd($data)
     <div class="container my-5">
         <div class="row">
             <div class="col-12">
@@ -70,7 +70,7 @@
                                                             <div class="text-success text-right">+28.30%</div>
                                                         </div>
                                                     </li>
-                                                    <li
+                                                    {{-- <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <span class="mr-2 font-weight-bold font-italic">02</span>
@@ -117,7 +117,7 @@
                                                             $12,50,000.00
                                                             <div class="text-success text-right">+28.30%</div>
                                                         </div>
-                                                    </li>
+                                                    </li> --}}
                                                 </ul>
                                             </div>
                                         </div>
