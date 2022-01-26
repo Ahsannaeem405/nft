@@ -34,9 +34,9 @@ class UpcomingController extends Controller
     //    $res=json_decode($get->body());
     //  dd(  $res);
 
-     $data=Http::get('https://testnets-api.opensea.io/api/v1/assets?order_direction=desc&offset=0&limit=20', ['verify' => false]);
+     $data=Http::get('https://testnets-api.opensea.io/api/v1/assets?order_direction=desc&offset=0&limit=20');
 $data=json_decode($data->body());
-dd($data->assets[0]->id);
+dd($data);
        dd(1);
 
     }
