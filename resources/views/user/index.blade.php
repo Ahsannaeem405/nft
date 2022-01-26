@@ -62,6 +62,7 @@
                                                     </li>
 
                                                     @foreach ($data->bundles->assets as $datas )
+                                                    @dd($datas->assets)
                                                     @foreach ($datas->assets as $datass )
 
 
