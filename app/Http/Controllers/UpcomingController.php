@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Http;
 
 class UpcomingController extends Controller
 {
@@ -24,6 +25,25 @@ class UpcomingController extends Controller
         return view('user.upcoming', compact('view'));
 
     }
+
+
+    function view_index(){
+
+
+    //     $get=Http::get('https://testnets-api.opensea.io/api/v1/assets?order_direction=desc&offset=0&limit=20');
+    //    $res=json_decode($get->body());
+    //  dd(  $res);
+
+     $data=Http::get('https://testnets-api.opensea.io/api/v1/assets?order_direction=desc&offset=0&limit=20', ['verify' => false]);
+$data=json_decode($data->body());
+dd($data->assets[0]->id);
+       dd(1);
+
+    }
+
+
+
+
 
 
      public function approved($id){

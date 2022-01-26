@@ -20,6 +20,9 @@ Route::get('/', function () {
     return view('user.index');
 });
 
+Route::get('/', [App\Http\Controllers\UpcomingController::class, 'view_index']);
+
+
 Route::get('/contact', function () {
     return view('user.contact');
 });
