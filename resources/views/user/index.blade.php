@@ -8,7 +8,7 @@
 
     @include('user.layout.header')
 
-    @dd($data)
+    @dd($data->bundles)
     <!--Nav Bar end-->
 
     <!--Home page start-->
