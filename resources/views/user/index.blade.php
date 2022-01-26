@@ -192,18 +192,7 @@
                                                             Marketcap
                                                         </div>
                                                     </li>
-                                                    <li
-                                                        class="list-group-item d-flex justify-content-between align-items-center border-top">
-                                                        <div class="d-flex justify-content-center align-items-center">
-                                                            <span class="mr-2 font-weight-bold font-italic">01</span>
-                                                            <img src="https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg"
-                                                                width="20" height="20" />name
-                                                        </div>
-                                                        <div class="value-size">
-                                                            $12,50,000.00
-                                                            <div class="text-success text-right">+28.30%</div>
-                                                        </div>
-                                                    </li>
+
                                                     @foreach ($data->bundles as $datas )
 
 
