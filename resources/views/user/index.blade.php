@@ -68,7 +68,9 @@
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <span class="mr-2 font-weight-bold font-italic">01</span>
                                                             <img src="https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg"
-                                                                width="20" height="20" />{{ $datas->name}}
+                                                                width="20" height="20" />
+                                                                <p>  {{ $datas->name}}</p>
+
                                                         </div>
                                                         <div class="value-size">
                                                             $12,50,000.00
