@@ -76,7 +76,7 @@
 
                                                         </div>
                                                         <div class="value-size">
-                                                            ${{$datass->dev_seller_fee_basis_points}}
+                                                            $122
                                                             <div class="text-success text-right">+28.30%</div>
                                                         </div>
                                                     </li>
