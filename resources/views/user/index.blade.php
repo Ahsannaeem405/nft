@@ -60,8 +60,9 @@
                                                             Marketcap
                                                         </div>
                                                     </li>
-                                                    @foreach ($data->bundles->assets as $datas )
                                                     @dd($data->bundles)
+                                                    @foreach ($data->bundles->assets as $datas )
+
 
 
                                                     <li
