@@ -60,11 +60,14 @@
                                                             Marketcap
                                                         </div>
                                                     </li>
+                                                    <?php
+                                                    $i = 1;
+                                                    ?>
                                                     @foreach ($data->collections as $datas )
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <span class="mr-2 font-weight-bold font-italic">01</span>
+                                                            <span class="mr-2 font-weight-bold font-italic">{{$i}}</span>
                                                             <img src="{{ $datas->image_url}}"  style="    max-width: 20px;"
                                                                 width="20" height="20" />
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
@@ -150,7 +153,7 @@
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <span class="mr-2 font-weight-bold font-italic">01</span>
+                                                            <span class="mr-2 font-weight-bold font-italic">{{$i}}</span>
                                                             <img src="{{ $datas->image_url}}"  style="    max-width: 20px;"
                                                                 width="20" height="20" />
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
@@ -184,11 +187,12 @@
                                                             Marketcap
                                                         </div>
                                                     </li>
-                                                    @foreach ($data->collections as $datas )
+
+                                                                          @foreach ($data->collections as $datas )
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <span class="mr-2 font-weight-bold font-italic">01</span>
+                                                            <span class="mr-2 font-weight-bold font-italic">{{$i}}</span>
                                                             <img src="{{ $datas->image_url}}"  style="    max-width: 20px;"
                                                                 width="20" height="20" />
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
