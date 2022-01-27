@@ -3,7 +3,7 @@
     <div class="container-fluid pl-0">
         <div class="row justify-content-center">
             <div class="col-lg-6 col-12 d-none d-lg-block">
-                <div class="signup-logo-side">
+                <div class="signup-logo-side" style="background-image: url('{{asset('img/Sentiment.jpg')}}')">
 
                 </div>
             </div>
