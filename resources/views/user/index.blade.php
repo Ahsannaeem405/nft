@@ -17,8 +17,10 @@
         <div class="row">
             <div class="col-12">
 
+
+
                 <!--Header block start-->
-                <div class="headerblock">
+                <div class="headerblock" style="background-image: url('{{asset('img/Sentiment.jpg')}}')">
                     <div class="row d-flex align-items-center">
                         <div class="col-md-5 col-lg-6 col-12">
                             <div class="headerblock-left my-3">
