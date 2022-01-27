@@ -293,7 +293,7 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="card-values">
-                                            @dd($datas)
+
                                             <p>Market Cap</p>
                                             ${{$datas->stats->market_cap}}
                                         </div>
@@ -330,19 +330,22 @@
                     </div>
                     <div class="explore-nftbody">
                         <div class="row">
+                            @foreach ( $data1->collections as $datass )
+
+
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
                                 <a href="#">
                                     <div class="explore-card mt-3 mx-3">
                                         <div class="explore-card-img">
-                                            <img src="{{asset('/img/black-logo.jpg')}}" />
+                                            <img src="{{$datass->large_image_url}}" />
                                             <i class="fas fa-ellipsis-h"></i>
                                         </div>
                                         <div class="explore-card-body m-3">
-                                            <h5>The Wolfgang</h5>
+                                            <h5>{{$datass->name}}</h5>
                                             <div class="d-flex align-items-center justify-content-between mt-4">
                                                 <div class="explore-card-bodyimg">
                                                     <img
-                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
+                                                        src="{{ $datass->image_url}}" />
                                                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         class="project-card_icon__3yC3z mx-2">
@@ -351,201 +354,13 @@
                                                             fill="#8A8A8A"></path>
                                                     </svg>
                                                 </div>
-                                                <span>0.023ETH</span>
+                                                <span>{{$datas->stats->floor_price}}ETH</span>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
-                                <a href="#">
-                                    <div class="explore-card mt-3 mx-3">
-                                        <div class="explore-card-img">
-                                            <img src="{{asset('/img/black-logo.jpg')}}" />
-                                            <i class="fas fa-ellipsis-h"></i>
-                                        </div>
-                                        <div class="explore-card-body m-3">
-                                            <h5>The Wolfgang</h5>
-                                            <div class="d-flex align-items-center justify-content-between mt-4">
-                                                <div class="explore-card-bodyimg">
-                                                    <img
-                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
-                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="project-card_icon__3yC3z mx-2">
-                                                        <path
-                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
-                                                            fill="#8A8A8A"></path>
-                                                    </svg>
-                                                </div>
-                                                <span>0.023ETH</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
-                                <a href="#">
-                                    <div class="explore-card mt-3 mx-3">
-                                        <div class="explore-card-img">
-                                            <img src="{{asset('/img/black-logo.jpg')}}" />
-                                            <i class="fas fa-ellipsis-h"></i>
-                                        </div>
-                                        <div class="explore-card-body m-3">
-                                            <h5>The Wolfgang</h5>
-                                            <div class="d-flex align-items-center justify-content-between mt-4">
-                                                <div class="explore-card-bodyimg">
-                                                    <img
-                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
-                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="project-card_icon__3yC3z mx-2">
-                                                        <path
-                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
-                                                            fill="#8A8A8A"></path>
-                                                    </svg>
-                                                </div>
-                                                <span>0.023ETH</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
-                                <a href="#">
-                                    <div class="explore-card mt-3 mx-3">
-                                        <div class="explore-card-img">
-                                            <img src="{{asset('/img/black-logo.jpg')}}" />
-                                            <i class="fas fa-ellipsis-h"></i>
-                                        </div>
-                                        <div class="explore-card-body m-3">
-                                            <h5>The Wolfgang</h5>
-                                            <div class="d-flex align-items-center justify-content-between mt-4">
-                                                <div class="explore-card-bodyimg">
-                                                    <img
-                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
-                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="project-card_icon__3yC3z mx-2">
-                                                        <path
-                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
-                                                            fill="#8A8A8A"></path>
-                                                    </svg>
-                                                </div>
-                                                <span>0.023ETH</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
-                                <a href="#">
-                                    <div class="explore-card mt-3 mx-3">
-                                        <div class="explore-card-img">
-                                            <img src="{{asset('/img/black-logo.jpg')}}" />
-                                            <i class="fas fa-ellipsis-h"></i>
-                                        </div>
-                                        <div class="explore-card-body m-3">
-                                            <h5>The Wolfgang</h5>
-                                            <div class="d-flex align-items-center justify-content-between mt-4">
-                                                <div class="explore-card-bodyimg">
-                                                    <img
-                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
-                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="project-card_icon__3yC3z mx-2">
-                                                        <path
-                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
-                                                            fill="#8A8A8A"></path>
-                                                    </svg>
-                                                </div>
-                                                <span>0.023ETH</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
-                                <a href="#">
-                                    <div class="explore-card mt-3 mx-3">
-                                        <div class="explore-card-img">
-                                            <img src="{{asset('/img/black-logo')}}.jpg" />
-                                            <i class="fas fa-ellipsis-h"></i>
-                                        </div>
-                                        <div class="explore-card-body m-3">
-                                            <h5>The Wolfgang</h5>
-                                            <div class="d-flex align-items-center justify-content-between mt-4">
-                                                <div class="explore-card-bodyimg">
-                                                    <img
-                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
-                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="project-card_icon__3yC3z mx-2">
-                                                        <path
-                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
-                                                            fill="#8A8A8A"></path>
-                                                    </svg>
-                                                </div>
-                                                <span>0.023ETH</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
-                                <a href="#">
-                                    <div class="explore-card mt-3 mx-3">
-                                        <div class="explore-card-img">
-                                            <img src="{{asset('/img/black-logo.jpg')}}" />
-                                            <i class="fas fa-ellipsis-h"></i>
-                                        </div>
-                                        <div class="explore-card-body m-3">
-                                            <h5>The Wolfgang</h5>
-                                            <div class="d-flex align-items-center justify-content-between mt-4">
-                                                <div class="explore-card-bodyimg">
-                                                    <img
-                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
-                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="project-card_icon__3yC3z mx-2">
-                                                        <path
-                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
-                                                            fill="#8A8A8A"></path>
-                                                    </svg>
-                                                </div>
-                                                <span>0.023ETH</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
-                                <a href="#">
-                                    <div class="explore-card mt-3 mx-3">
-                                        <div class="explore-card-img">
-                                            <img src="{{asset('/img/black-logo.jpg')}}" />
-                                            <i class="fas fa-ellipsis-h"></i>
-                                        </div>
-                                        <div class="explore-card-body m-3">
-                                            <h5>The Wolfgang</h5>
-                                            <div class="d-flex align-items-center justify-content-between mt-4">
-                                                <div class="explore-card-bodyimg">
-                                                    <img
-                                                        src="https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120" />
-                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="project-card_icon__3yC3z mx-2">
-                                                        <path
-                                                            d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
-                                                            fill="#8A8A8A"></path>
-                                                    </svg>
-                                                </div>
-                                                <span>0.023ETH</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            @endforeach
 
 
                         </div>
