@@ -67,7 +67,7 @@
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <span class="mr-2 font-weight-bold font-italic">{{$i}}</span>
+                                                            <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
                                                             <img src="{{ $datas->image_url}}"  style="    max-width: 20px;"
                                                                 width="20" height="20" />
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
@@ -153,7 +153,7 @@
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <span class="mr-2 font-weight-bold font-italic">{{$i}}</span>
+                                                            <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
                                                             <img src="{{ $datas->image_url}}"  style="    max-width: 20px;"
                                                                 width="20" height="20" />
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
@@ -192,7 +192,7 @@
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <span class="mr-2 font-weight-bold font-italic">{{$i}}</span>
+                                                            <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
                                                             <img src="{{ $datas->image_url}}"  style="    max-width: 20px;"
                                                                 width="20" height="20" />
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
@@ -263,13 +263,16 @@
                     </div>
                     <div class="block-body">
                         <div class="row mb-3">
+                            @foreach ( $data1->collections as $datass )
+
+
                             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 p-0">
                                 <div class="feature-card mt-4 mx-2">
                                     <div class="card-head">
                                         <img
-                                            src="https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg" />
+                                            src="{{ $datass->image_url}}" />
                                         <div class="card-bio ml-1">
-                                            Hape prime<br>
+                                            {{$datass->name}}<br>
                                             <span>Avator</span>
                                         </div>
                                         <p class="card-title">
@@ -285,7 +288,7 @@
                                     <div class="card-body">
                                         <div class="card-values">
                                             <p>Market Cap</p>
-                                            $320.5K
+                                            ${{$datas->stats->market_cap}}
                                         </div>
                                         <div class="card-values border-left border-right px-3">
                                             <p>Holders</p>
@@ -298,7 +301,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            @endforeach
 
                         </div>
                     </div>
