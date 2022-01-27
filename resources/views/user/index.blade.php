@@ -65,7 +65,7 @@
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <span class="mr-2 font-weight-bold font-italic">01</span>
-                                                            <img src="{{$datas->assets[0]->image_preview_url}}" style="    max-width: 20px;"
+                                                            <img src=" @if(isset($datas->assets[0]->image_preview_url)) {{$datas->assets[0]->image_preview_url}}" @endif style="    max-width: 20px;"
                                                                 width="20" height="20" />
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
 
