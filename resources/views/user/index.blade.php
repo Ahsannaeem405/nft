@@ -298,11 +298,11 @@
                                         </div>
                                         <div class="card-values border-left border-right px-3">
                                             <p>Holders</p>
-                                            20.5K
+                                           ${{ $datas->stats->one_day_sales}}
                                         </div>
                                         <div class="card-values">
                                             <p>Volume (24H)</p>
-                                            $56.38K
+                                            ${{$datas->stats->one_day_volume}}
                                         </div>
                                     </div>
                                 </div>
