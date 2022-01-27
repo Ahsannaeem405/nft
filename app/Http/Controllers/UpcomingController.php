@@ -40,7 +40,7 @@ class UpcomingController extends Controller
      $data=Http::get('https://api.opensea.io/api/v1/bundles?limit=5&offset=0');
         $data=json_decode($data->body());
 
-        $data1=Http::get('https://api.opensea.io/api/v1/collection/doodles-official');
+        $data1=Http::get('https://api.opensea.io/api/v1/bundles?limit=20&offset=0');
         $data1=json_decode($data1->body());
         dd($data1);
 
