@@ -337,11 +337,12 @@
                                 <a href="#">
                                     <div class="explore-card mt-3 mx-3">
                                         <div class="explore-card-img">
-                                            <img src="{{$datass->large_image_url}}" />
+                                            <img
+                                           style="    max-height: 204px;min-width: 204px;max-width: 243px;min-height: 204px;" src=" @if (isset($datass->large_image_url)){{$datass->large_image_url}} @else https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120  @endif " />
                                             <i class="fas fa-ellipsis-h"></i>
                                         </div>
                                         <div class="explore-card-body m-3">
-                                            <h5>{{$datass->name}}</h5>
+                                            <h5 style="line-height: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">{{$datass->name}}</h5>
                                             <div class="d-flex align-items-center justify-content-between mt-4">
                                                 <div class="explore-card-bodyimg">
                                                     <img
@@ -360,6 +361,7 @@
                                     </div>
                                 </a>
                             </div>
+
                             @endforeach
 
 
