@@ -61,6 +61,7 @@
                                                         </div>
                                                     </li>
                                                     @foreach ($data->bundles as $datas )
+                                                    {{$datas}}
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
@@ -71,7 +72,7 @@
 
                                                         </div>
                                                         <div class="value-size">
-                                                            ${{$datas}}
+                                                            $
                                                             <div class="text-success text-right">+28.30%</div>
                                                         </div>
                                                     </li>
