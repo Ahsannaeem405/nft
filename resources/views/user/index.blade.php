@@ -293,6 +293,7 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="card-values">
+                                            @dd($datas)
                                             <p>Market Cap</p>
                                             ${{$datas->stats->market_cap}}
                                         </div>
