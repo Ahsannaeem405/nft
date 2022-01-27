@@ -271,7 +271,7 @@
                         <div class="row mb-3">
                             @foreach ( $data1->collections as $datass )
 
-@dd($datass)
+{{-- @dd($datass) --}}
                             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 p-0">
                                 <div class="feature-card mt-4 mx-2">
                                     <div class="card-head">
