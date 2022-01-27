@@ -61,6 +61,7 @@
                                                         </div>
                                                     </li>
                                                     @foreach ($data->bundles as $datas )
+                                                    @dd($datas)
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
