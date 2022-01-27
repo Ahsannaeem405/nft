@@ -68,7 +68,7 @@
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
-                                                            <img src="{{ $datas->image_url}}"  style="    max-width: 20px;"
+                                                            <img src="@if(isset($datas->image_url)) {{ $datas->image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
                                                                 width="20" height="20" />
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
                                                         </div>
@@ -157,7 +157,7 @@
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
-                                                            <img src="{{ $datas->image_url}}"  style="    max-width: 20px;"
+                                                            <img src="@if(isset($datas->image_url)) {{ $datas->image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
                                                                 width="20" height="20" />
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
                                                         </div>
@@ -199,7 +199,7 @@
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
-                                                            <img src="{{ $datas->image_url}}"  style="    max-width: 20px;"
+                                                            <img src="@if(isset($datas->image_url)) {{ $datas->image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
                                                                 width="20" height="20" />
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
                                                         </div>
@@ -276,7 +276,7 @@
                                 <div class="feature-card mt-4 mx-2">
                                     <div class="card-head">
                                         <img
-                                            src="{{ $datass->image_url}}" />
+                                            src=" @if(isset( $datass->image_url)) {{ $datass->image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg  @endif" />
                                         <div class="card-bio ml-1" style="line-height: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">
                                             {{$datass->name}}<br>
                                             <span>Avator</span>
@@ -346,7 +346,7 @@
                                             <div class="d-flex align-items-center justify-content-between mt-4">
                                                 <div class="explore-card-bodyimg">
                                                     <img
-                                                        src="{{ $datass->image_url}}" />
+                                                        src=" @if(isset($datass->image_url)) {{ $datass->image_url}} @else https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120  @endif " />
                                                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         class="project-card_icon__3yC3z mx-2">
