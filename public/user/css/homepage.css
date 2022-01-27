@@ -161,8 +161,10 @@ margin-top: 0px !important;
     align-items: flex-start;
 }
 .feature-card .card-head img{
-    width: 50px;
-    height: 50px;
+    max-width: 50px;
+   max-height: 50px;
+  min-width: 50px;
+  min-height: 50px;
     border-radius: 25px;
 }
 .feature-card .card-head p{

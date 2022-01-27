@@ -149,6 +149,9 @@
                                                             Marketcap
                                                         </div>
                                                     </li>
+                                                    <?php
+                                                    $i = 1;
+                                                    ?>
                                                     @foreach ($data->collections as $datas )
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
@@ -187,6 +190,9 @@
                                                             Marketcap
                                                         </div>
                                                     </li>
+                                                    <?php
+                                                    $i = 1;
+                                                    ?>
 
                                                                           @foreach ($data->collections as $datas )
                                                     <li
@@ -271,7 +277,7 @@
                                     <div class="card-head">
                                         <img
                                             src="{{ $datass->image_url}}" />
-                                        <div class="card-bio ml-1">
+                                        <div class="card-bio ml-1" style="line-height: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">
                                             {{$datass->name}}<br>
                                             <span>Avator</span>
                                         </div>
