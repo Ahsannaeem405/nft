@@ -1,7 +1,7 @@
 .headerblock{
     /* background: #9E77F3;
     background-image: linear-gradient(to right bottom, #a387ff, #d27fe6, #ee7dcb, #fc82b1, #ff8c9c, #ff9792, #ffa28a, #ffaf86, #ffbb86, #ffc888, #ffd48c, #fde192); */
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{asset("img/Sentiment.jpg")}}');
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{asset(img/Sentiment.jpg)}}');
 padding: 50px;
 border-radius: 20px;
 box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
