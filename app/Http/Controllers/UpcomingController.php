@@ -41,8 +41,11 @@ class UpcomingController extends Controller
         $data=json_decode($data->body());
 
 
+        $data1=Http::get('https://api.opensea.io/api/v1/collections?offset=0&limit=12');
+        $data1=json_decode($data1->body());
 
-        return view('user.index', compact('data'));
+
+        return view('user.index', compact('data', 'data1'));
 
 
     }
