@@ -37,7 +37,7 @@ class UpcomingController extends Controller
 
 
 
-     $data=Http::get('https://testnets-api.opensea.io/api/v1/collections?offset=0&limit=5');
+     $data=Http::get('https://api.opensea.io/api/v1/collections?offset=0&limit=6');
         $data=json_decode($data->body());
 dd($data);
         // $data1=Http::get('https://api.opensea.io/api/v1/collection/doodles-official');
