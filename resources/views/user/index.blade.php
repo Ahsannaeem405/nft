@@ -75,7 +75,7 @@
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
                                                         </div>
                                                         <div class="value-size">
-                                                            ${{ $datas->stats->market_cap}}
+                                                            ${{ number_format((float)$datas->stats->market_cap, 4, '.', '') }}
                                                             <div class="text-success text-right">{{$datas->stats->average_price}}</div>
                                                         </div>
                                                     </li>
@@ -164,8 +164,8 @@
                                                                        <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
                                                                </div>
                                                                <div class="value-size">
-                                                                   ${{ $datas->stats->market_cap}}
-                                                                   <div class="text-success text-right">{{$datas->stats->average_price}}</div>
+                                                                ${{ number_format((float)$datas->stats->market_cap, 4, '.', '') }}
+                                                                <div class="text-success text-right">{{$datas->stats->average_price}}</div>
                                                                </div>
                                                            </li>
                                                            @endforeach
@@ -206,7 +206,7 @@
             <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
     </div>
     <div class="value-size">
-        ${{ $datas->stats->market_cap}}
+        ${{ number_format((float)$datas->stats->market_cap, 4, '.', '') }}
         <div class="text-success text-right">{{$datas->stats->average_price}}</div>
     </div>
 </li>
@@ -297,15 +297,15 @@
                                         <div class="card-values">
 
                                             <p>Market Cap</p>
-                                            ${{$datas->stats->market_cap}}
+                                            ${{$datass->stats->market_cap}}
                                         </div>
                                         <div class="card-values border-left border-right px-3">
                                             <p>Holders</p>
-                                           ${{ $datas->stats->one_day_sales}}
+                                           ${{ $datass->stats->one_day_sales}}
                                         </div>
                                         <div class="card-values">
                                             <p>Volume (24H)</p>
-                                            ${{$datas->stats->one_day_volume}}
+                                            ${{$datass->stats->one_day_volume}}
                                         </div>
                                     </div>
                                 </div>
@@ -357,7 +357,7 @@
                                                             fill="#8A8A8A"></path>
                                                     </svg>
                                                 </div>
-                                                <span>{{$datas->stats->floor_price}}ETH</span>
+                                                <span>{{$datass->stats->total_supply}}ETH</span>
                                             </div>
                                         </div>
                                     </div>
