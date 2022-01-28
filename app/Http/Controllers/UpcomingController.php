@@ -17,6 +17,11 @@ class UpcomingController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+
+     public function detail(){
+
+return view('user.detail');
+     }
     function upcoming(){
 
         $view = Upcoming::where('status', 1)->get();
@@ -37,11 +42,11 @@ class UpcomingController extends Controller
 
 
 
-     $data=Http::get('https://api.opensea.io/api/v1/collections?offset=0&limit=6');
+     $data=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=6');
         $data=json_decode($data->body());
 
 
-        $data1=Http::get('https://api.opensea.io/api/v1/collections?offset=0&limit=12');
+        $data1=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=12');
         $data1=json_decode($data1->body());
 
 

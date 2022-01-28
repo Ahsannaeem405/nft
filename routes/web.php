@@ -22,6 +22,8 @@ ded by the RouteServiceProvider within a group which
 
 Route::get('/', [App\Http\Controllers\UpcomingController::class, 'view_index']);
 
+Route::get('/detail', [App\Http\Controllers\UpcomingController::class, 'detail']);
+
 
 Route::get('/contact', function () {
     return view('user.contact');
