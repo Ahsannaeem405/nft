@@ -48,7 +48,7 @@ return view('user.detail');
 
         $data1=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=12');
         $data1=json_decode($data1->body());
-// dd($data);
+dd($data);
 
         return view('user.index', compact('data', 'data1'));
 

@@ -340,7 +340,7 @@
                                     <div class="explore-card mt-3 mx-3">
                                         <div class="explore-card-img">
                                             <img
-                                           style="    max-height: 190px;min-width: 190px;max-width: 190px;min-height: 190px;" src=" @if (isset($datass->large_image_url)){{$datass->large_image_url}} @else https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120  @endif " />
+                                           style="    max-height: 190px;min-width: 240px;max-width: 240px;min-height: 190px;" src=" @if (isset($datass->large_image_url)){{$datass->large_image_url}} @else https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120  @endif " />
                                             <i class="fas fa-ellipsis-h"></i>
                                         </div>
                                         <div class="explore-card-body m-3">
