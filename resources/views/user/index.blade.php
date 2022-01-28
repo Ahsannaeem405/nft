@@ -76,7 +76,7 @@
                                                         </div>
                                                         <div class="value-size">
                                                             ${{ number_format((float)$datas->stats->market_cap, 4, '.', '') }}
-                                                            <div class="text-success text-right">{{$datas->stats->average_price}}</div>
+                                                            <div class="text-success text-right">{{  number_format((float)$datas->stats->average_price, 4, '.', '') }}</div>
                                                         </div>
                                                     </li>
                                                     @endforeach
@@ -165,7 +165,7 @@
                                                                </div>
                                                                <div class="value-size">
                                                                 ${{ number_format((float)$datas->stats->market_cap, 4, '.', '') }}
-                                                                <div class="text-success text-right">{{$datas->stats->average_price}}</div>
+                                                                <div class="text-success text-right">{{  number_format((float)$datas->stats->average_price, 4, '.', '') }}</div>
                                                                </div>
                                                            </li>
                                                            @endforeach
@@ -207,7 +207,7 @@
     </div>
     <div class="value-size">
         ${{ number_format((float)$datas->stats->market_cap, 4, '.', '') }}
-        <div class="text-success text-right">{{$datas->stats->average_price}}</div>
+        <div class="text-success text-right">{{  number_format((float)$datas->stats->average_price, 4, '.', '') }}</div>
     </div>
 </li>
 @endforeach
@@ -297,7 +297,8 @@
                                         <div class="card-values">
 
                                             <p>Market Cap</p>
-                                            ${{$datass->stats->market_cap}}
+
+                                            ${{  number_format((float)$datass->stats->market_cap, 4, '.', '') }}
                                         </div>
                                         <div class="card-values border-left border-right px-3">
                                             <p>Holders</p>
@@ -305,7 +306,10 @@
                                         </div>
                                         <div class="card-values">
                                             <p>Volume (24H)</p>
-                                            ${{$datass->stats->one_day_volume}}
+
+                                            ${{  number_format((float)$datass->stats->one_day_volume, 4, '.', '') }}
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -348,7 +352,7 @@
                                             <div class="d-flex align-items-center justify-content-between mt-4">
                                                 <div class="explore-card-bodyimg">
                                                     <img
-                                                        src=" @if(isset($datass->banner_image_url)) {{ $datass->banner_image_url}} @else https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120  @endif " />
+                                                        src=" @if(isset($datass->large_image_url)) {{ $datass->large_image_url}} @else https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120  @endif " />
                                                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         class="project-card_icon__3yC3z mx-2">
