@@ -65,12 +65,12 @@
                                                     <?php
                                                     $i = 1;
                                                     ?>
-                                                    @foreach ($data->collections as $datas )
+                                                    @foreach ($data as $datas )
                                                     <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
-                                                            <img src="@if(isset($datas->image_url)) {{ $datas->image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
+                                                            <img src="@if(isset($datas->featured_image_url)) {{ $datas->featured_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
                                                                 width="20" height="20" />
                                                                 <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
                                                         </div>
@@ -154,21 +154,21 @@
                                                     <?php
                                                     $i = 1;
                                                     ?>
-                                                    @foreach ($data->collections as $datas )
-                                                    <li
-                                                        class="list-group-item d-flex justify-content-between align-items-center border-top">
-                                                        <div class="d-flex justify-content-center align-items-center">
-                                                            <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
-                                                            <img src="@if(isset($datas->image_url)) {{ $datas->image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
-                                                                width="20" height="20" />
-                                                                <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
-                                                        </div>
-                                                        <div class="value-size">
-                                                            ${{ $datas->stats->market_cap}}
-                                                            <div class="text-success text-right">{{$datas->stats->average_price}}</div>
-                                                        </div>
-                                                    </li>
-                                                    @endforeach
+                                                           @foreach ($data as $datas )
+                                                           <li
+                                                               class="list-group-item d-flex justify-content-between align-items-center border-top">
+                                                               <div class="d-flex justify-content-center align-items-center">
+                                                                   <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
+                                                                   <img src="@if(isset($datas->featured_image_url)) {{ $datas->featured_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
+                                                                       width="20" height="20" />
+                                                                       <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
+                                                               </div>
+                                                               <div class="value-size">
+                                                                   ${{ $datas->stats->market_cap}}
+                                                                   <div class="text-success text-right">{{$datas->stats->average_price}}</div>
+                                                               </div>
+                                                           </li>
+                                                           @endforeach
                                                 </ul>
                                             </div>
                                         </div>
@@ -196,21 +196,21 @@
                                                     $i = 1;
                                                     ?>
 
-                                                                          @foreach ($data->collections as $datas )
-                                                    <li
-                                                        class="list-group-item d-flex justify-content-between align-items-center border-top">
-                                                        <div class="d-flex justify-content-center align-items-center">
-                                                            <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
-                                                            <img src="@if(isset($datas->image_url)) {{ $datas->image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
-                                                                width="20" height="20" />
-                                                                <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
-                                                        </div>
-                                                        <div class="value-size">
-                                                            ${{ $datas->stats->market_cap}}
-                                                            <div class="text-success text-right">{{$datas->stats->average_price}}</div>
-                                                        </div>
-                                                    </li>
-                                                    @endforeach
+@foreach ($data as $datas )
+<li
+    class="list-group-item d-flex justify-content-between align-items-center border-top">
+    <div class="d-flex justify-content-center align-items-center">
+        <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
+        <img src="@if(isset($datas->featured_image_url)) {{ $datas->featured_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
+            width="20" height="20" />
+            <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
+    </div>
+    <div class="value-size">
+        ${{ $datas->stats->market_cap}}
+        <div class="text-success text-right">{{$datas->stats->average_price}}</div>
+    </div>
+</li>
+@endforeach
                                                 </ul>
                                             </div>
                                         </div>
@@ -271,14 +271,14 @@
                     </div>
                     <div class="block-body">
                         <div class="row mb-3">
-                            @foreach ( $data1->collections as $datass )
+                            @foreach ( $data1 as $datass )
 
 {{-- @dd($datass) --}}
                             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 p-0">
                                 <div class="feature-card mt-4 mx-2">
                                     <div class="card-head">
                                         <img
-                                            src=" @if(isset( $datass->image_url)) {{ $datass->image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg  @endif" />
+                                            src=" @if(isset( $datass->banner_image_url)) {{ $datass->banner_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg  @endif" />
                                         <div class="card-bio ml-1" style="line-height: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">
                                             {{$datass->name}}<br>
                                             <span>Avator</span>
@@ -332,7 +332,7 @@
                     </div>
                     <div class="explore-nftbody">
                         <div class="row">
-                            @foreach ( $data1->collections as $datass )
+                            @foreach ( $data1 as $datass )
 
 
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
@@ -348,7 +348,7 @@
                                             <div class="d-flex align-items-center justify-content-between mt-4">
                                                 <div class="explore-card-bodyimg">
                                                     <img
-                                                        src=" @if(isset($datass->image_url)) {{ $datass->image_url}} @else https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120  @endif " />
+                                                        src=" @if(isset($datass->banner_image_url)) {{ $datass->banner_image_url}} @else https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120  @endif " />
                                                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         class="project-card_icon__3yC3z mx-2">
