@@ -80,13 +80,10 @@
                                                                 style="      font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
                                                               <span style="    overflow: hidden;word-break: break-all;"> {{$data1->slug}}</span>
                                                                 &nbsp;&nbsp;
-
-
-                                                            </p>
-                                                            <p>
                                                                 <i class="fa fa-clone" aria-hidden="true"></i>
 
                                                             </p>
+
                                                         </div>
                                                     </div>
                                                     <div class="col-4 " style="padding-left: unset;">
