@@ -32,7 +32,7 @@
         }
 
     </style>
-    @dd($data)
+    @dd($data1)
     <div class="container my-5">
         <div class="row">
             <div class="col-12" style="    padding: unset;">
