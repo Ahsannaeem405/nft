@@ -66,8 +66,9 @@
                                                     $i = 1;
                                                     ?>
                                                     @foreach ($data as $datas )
+                                                    <a href="{{url('/overview',[$datas->slug])}}">
                                                     <li class="list-group-item d-flex justify-content-between align-items-center border-top">
-<a href="{{url('/overview',[$datas->slug])}}">
+
 
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
@@ -79,9 +80,9 @@
                                                             ${{ number_format((float)$datas->stats->market_cap, 4, '.', '') }}
                                                             <div class="text-success text-right">{{  number_format((float)$datas->stats->average_price, 4, '.', '') }}</div>
                                                         </div>
-                                                    </a>
-                                                    </li>
 
+                                                    </li>
+                                                </a>
                                                     @endforeach
                                                     {{-- <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
