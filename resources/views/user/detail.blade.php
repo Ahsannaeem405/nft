@@ -418,12 +418,10 @@
         <div class="row">
             <div class="col-12" style="    margin-top: 20px;">
                 {{-- <div id="chartContainer" style="height: 370px; width: 100%;"></div> --}}
-                <div class="explore-nft">
+                <div class="">
                     <div class="explore-nft-header">
-                        <h2>Explore NFTs</h2>
-                        <div>
-                            <button>Read More</button>
-                        </div>
+                        <h2>You Might Be Interested At</h2>
+
                     </div>
                     <div class="explore-nftbody">
                         <div class="row">
