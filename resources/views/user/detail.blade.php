@@ -79,7 +79,7 @@
 
 
 
-<div class="col-8" style="">
+<div class="col-9" style="">
 
     <div style="line-height: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all" class="">
 
@@ -93,7 +93,7 @@
                                                             </p>
                                                         </div>
                                                     </div>
-                                                        <div class="col-4">
+                                                        <div class="col-3" style="    padding-left: unset;">
                     <i class="fa fa-clone" aria-hidden="true"></i>
                     </div>
                 </div>
