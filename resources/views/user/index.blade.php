@@ -66,7 +66,7 @@
                                                     $i = 1;
                                                     ?>
                                                     @foreach ($data as $datas )
-                                                    <a  h ref="{{url('/overview',[$datas->slug])}}" style="text-decoration: none;">
+                                                    <a  href="{{url('/overview',[$datas->slug])}}" style="text-decoration: none;">
                                                     <li style="    color: black;" class="list-group-item d-flex justify-content-between align-items-center border-top">
 
 
