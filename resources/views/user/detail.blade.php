@@ -33,7 +33,7 @@
         }
 
     </style>
-     @dd($data1)
+     {{-- @dd($data1) --}}
     <div class="container my-5">
         <div class="row">
             <div class="col-12" style="    padding: unset;">
@@ -125,7 +125,7 @@
                                                     </div>
                                                     <div class="col-12" style="    margin-top: -11px;">
                                                         <span
-                                                            style="    border-radius: 6px;font-size: 14px;padding: 3px 10px; color: #269958;   background: #f9f9f9;">Avatar
+                                                            style="    border-radius: 6px;font-size: 14px;padding: 3px 10px; color: #269958;   background: #f9f9f9;">{{$data1->symbol}}
                                                         </span>
                                                     </div>
                                                 </div>
