@@ -416,7 +416,7 @@
 
         </div>
         <div class="row">
-            <div class="col-12" style="    margin-top: 20px;">
+            <div class="col-12" style="    margin-top: 60px;">
                 {{-- <div id="chartContainer" style="height: 370px; width: 100%;"></div> --}}
                 <div class="">
                     <div class="explore-nft-header">
