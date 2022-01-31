@@ -31,6 +31,14 @@
             }
 
         }
+        @media only screen and (max-width: 420px) and (min-width: 300px)  {
+.circle_img{
+width: 64px !important;
+height: 64px !important;
+}
+
+
+        }
 
     </style>
      {{-- @dd($data1->primary_asset_contracts[0]->symbol) --}}
@@ -48,7 +56,7 @@
                                             {{-- <img style="width: 100%; border-radius: 50%;object-fit: contain;object-position: center center;"
                                                 src="@if (isset($data1->featured_image_url)){{ $data1->featured_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif" > --}}
 
-                                            <img style="    width: 80px;
+                                            <img class="circle_img" style="    width: 80px;
 
                                             border-radius: 50%;
                                             object-position: center center;
