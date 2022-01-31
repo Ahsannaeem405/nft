@@ -67,7 +67,7 @@
                                                     ?>
                                                     @foreach ($data as $datas )
                                                     <a href="{{url('/overview',[$datas->slug])}}">
-                                                    <li class="list-group-item d-flex justify-content-between align-items-center border-top">
+                                                    <li style="    color: black;" class="list-group-item d-flex justify-content-between align-items-center border-top">
 
 
                                                         <div class="d-flex justify-content-center align-items-center">
@@ -159,7 +159,8 @@
                                                     $i = 1;
                                                     ?>
                                                            @foreach ($data as $datas )
-                                                           <li
+                                                           <a href="{{url('/overview',[$datas->slug])}}">
+                                                           <li style="color: black"
                                                                class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                                <div class="d-flex justify-content-center align-items-center">
                                                                    <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
@@ -172,6 +173,7 @@
                                                                 <div class="text-success text-right">{{  number_format((float)$datas->stats->average_price, 4, '.', '') }}</div>
                                                                </div>
                                                            </li>
+                                                           </a>
                                                            @endforeach
                                                 </ul>
                                             </div>
@@ -201,7 +203,8 @@
                                                     ?>
 
 @foreach ($data as $datas )
-<li
+<a href="{{url('/overview',[$datas->slug])}}">
+<li style="color: black"
     class="list-group-item d-flex justify-content-between align-items-center border-top">
     <div class="d-flex justify-content-center align-items-center">
         <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
@@ -214,6 +217,7 @@
         <div class="text-success text-right">{{  number_format((float)$datas->stats->average_price, 4, '.', '') }}</div>
     </div>
 </li>
+</a>
 @endforeach
                                                 </ul>
                                             </div>
@@ -277,6 +281,7 @@
                         <div class="row mb-3">
                             @foreach ( $data1 as $datass )
 
+                            <a href="{{url('/overview',[$datass->slug])}}">
 {{-- @dd($datass) --}}
                             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 p-0">
                                 <div class="feature-card mt-4 mx-2">
@@ -318,6 +323,7 @@
                                     </div>
                                 </div>
                             </div>
+                            </a>
                             @endforeach
 
                         </div>
@@ -342,7 +348,7 @@
                         <div class="row">
                             @foreach ( $data1 as $datass )
 
-
+                            <a href="{{url('/overview',[$datass->slug])}}">
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
                                 <a href="#">
                                     <div class="explore-card mt-3 mx-3">
@@ -371,7 +377,7 @@
                                     </div>
                                 </a>
                             </div>
-
+                            </a>
                             @endforeach
 
 
