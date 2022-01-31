@@ -86,7 +86,7 @@
 
 
 
-                                                            <p style="      font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
+                                                            <p style="       margin: auto;   font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
                                                           {{$data1->slug}}
                                                                 &nbsp;&nbsp;
 
