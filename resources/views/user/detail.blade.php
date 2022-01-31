@@ -32,7 +32,7 @@
         }
 
     </style>
-    @dd($data1)
+    {{-- @dd($data1) --}}
     <div class="container my-5">
         <div class="row">
             <div class="col-12" style="    padding: unset;">
@@ -49,7 +49,7 @@
                                         </div>
                                         <div class="col-lg-8 col-xl-8 col-md-8  col-10" style=" ">
                                             <span
-                                                style="display: block;font-weight: 700;font-size: 24px;line-height: 36px;">NFT
+                                                style="display: block;font-weight: 700;font-size: 24px;line-height: 36px;"> {{$data1->name }}
                                             </span>
                                             <div class="col-12" style="padding: unset;    margin-top: 10px;">
                                                 <div class="row">
@@ -78,8 +78,7 @@
 
                                                             <p
                                                                 style="      font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
-
-                                                                0xcf514F
+                                                                {{$data1->slug}}
                                                                 &nbsp;&nbsp;
                                                                 <i class="fa fa-clone" aria-hidden="true"></i>
 
@@ -94,7 +93,7 @@
                                                                 style="   color: white;    font-size: 14px;  text-align: center;padding: 5px;">
 
                                                                 <i class="fas fa-cube"></i>
-                                                                8,888 NFTs
+                                                             {{$data1->dev_seller_fee_basis_points}}NFTs
 
 
                                                             </p>
@@ -114,7 +113,6 @@
                                         <div class="col-2 share" style="text-align: center">
                                             <a class="sharelink" href="">
 
-
                                                 <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     class="collection-info_titleButtonIcon__C3_aX">
@@ -132,9 +130,11 @@
 
                                     <div class="row">
                                         <div class="col-12" style="    margin-top: 23px;">
-                                            <p>Sacred Skulls is a collection of 8,888 randomly generated Skull NFTs. Our
-                                                collection of Skulls are hand drawn by an incredibly talented, female
-                                                artist, &nbsp;&nbsp; <a data-toggle="modal" data-target="#exampleModal" style="    color: blue;text-decoration: none">...  [View All]</a> </p>
+                                            <p>
+                                                <p>{{$data1->description}} </p>
+
+
+                                                {{-- <a data-toggle="modal" data-target="#exampleModal" style="    color: blue;text-decoration: none">...  [View All]</a> </p> --}}
                                         </div>
 
                                         <div class="col-12" style="    margin-top: 23px;    text-align: end;">
@@ -207,7 +207,7 @@
                                                     <div class="col-8">
                                                         <p
                                                             style="font-family: Poppins; color:#535572;  margin-bottom: 3px;  font-size: 15px;">
-                                                           Volum
+                                                           Volume
                                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg"
                                                                 class="data-box-small_infoIcon__yr6OS">
@@ -219,8 +219,8 @@
 
                                                         </p>
 
-                                                        <h5 style="    margin-bottom: 3px;">$920,042.69</h5>
-                                                        <span style="color: #5cc489;    font-weight: 700;">+75421%</span>
+                                                        <h5 style="    margin-bottom: 3px;">${{  number_format((float)$data1->stats->one_day_volume, 4, '.', '') }}</h5>
+                                                        <span style="color: #5cc489;    font-weight: 700;">+ {{  number_format((float)$data1->stats->one_day_sales, 4, '.', '') }} %</span>
                                                     </div>
                                                     <div class="col-4" style="  ">
                                                         <div
@@ -265,8 +265,8 @@
 
                                                         </p>
 
-                                                        <h5 style="    margin-bottom: 3px;">$920,042.69</h5>
-                                                        <span style="color: #5cc489;    font-weight: 700;">+75421%</span>
+                                                        <h5 style="    margin-bottom: 3px;">${{  number_format((float)$data1->stats->floor_price, 4, '.', '') }}</h5>
+                                                        <span style="color: #5cc489;    font-weight: 700;">+{{  number_format((float)$data1->stats->one_day_sales, 4, '.', '') }}%</span>
                                                     </div>
                                                     <div class="col-4" style="  ">
                                                         <div
