@@ -8,6 +8,7 @@
 
     @include('user.layout.header')
 
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <!--Home page silder end-->
     <!--top collection start-->
 
@@ -86,15 +87,15 @@
 
 
 
-                                                            <p  style="       margin: auto;   font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
-                                                   <span id="sample">    {{$data1->slug}}</span>
+                                                            <p id="sample"  style="       margin: auto;   font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
+                                                   <span >    {{$data1->slug}}</span>
                                                                 &nbsp;&nbsp;
 
                                                             </p>
                                                         </div>
                                                     </div>
                                                         <div class="col-3" style="    padding-left: unset;">
-                    <i class="fa fa-clone" aria-hidden="true" onclick="CopyToClipboard('sample');return false;"></i>
+                    <i class="fa fa-clone" aria-hidden="true"  onclick="copyToClipboard('#sample')"></i>
 
                     </div>
                 </div>
@@ -635,16 +636,12 @@
         }
         </script>
         <script>
-  function CopyToClipboard(id)
-{
-
-    alert(id);
-var r = document.createRange();
-r.selectNode(document.getElementById(id));
-window.getSelection().removeAllRanges();
-window.getSelection().addRange(r);
-document.execCommand('copy');
-window.getSelection().removeAllRanges();
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
 }
         </script>
 @endsection
