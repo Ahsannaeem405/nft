@@ -180,8 +180,8 @@
 
                                                         </p>
 
-                                                        <h5 style="    margin-bottom: 3px;">${{ $datass->stats->one_day_sales}}</h5>
-                                                        <span style="color: #5cc489;    font-weight: 700;">+ ${{ $datass->stats->one_day_sales}}%</span>
+                                                        <h5 style="    margin-bottom: 3px;">${{ $data1->stats->one_day_sales}}</h5>
+                                                        <span style="color: #5cc489;    font-weight: 700;">+ ${{ $data1->stats->one_day_sales}}%</span>
                                                     </div>
                                                     <div class="col-4" style="  ">
                                                         <div
