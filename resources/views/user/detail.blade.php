@@ -75,6 +75,11 @@
                                                     </div>
                                                     <div class="col-4">
                                                         <div style="border-radius: 6px;background: #f2f2f2;     ">
+                                                            <div class="row">
+
+
+
+<div class="col-8">
 
                                                             <p
                                                                 style="      font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
@@ -82,8 +87,11 @@
                                                                 &nbsp;&nbsp;
 
                                                             </p>
-                                                            <i class="fa fa-clone" aria-hidden="true"></i>
-
+                                                        </div>
+                                                        <div class="col-4">
+                    <i class="fa fa-clone" aria-hidden="true"></i>
+                    </div>
+                </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-4 " style="padding-left: unset;">
