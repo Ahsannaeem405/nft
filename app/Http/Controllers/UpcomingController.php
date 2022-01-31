@@ -227,16 +227,16 @@ return view('admin.edit');
 
         // dd($data->collection);
         $data1 = $data->collection;
-       $add = $data1->primary_asset_contracts[0]->address;
+    //    $add = $data1->primary_asset_contracts[0]->address;
 
         $data12=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=12');
         $data12=json_decode($data12->body());
 
-        $add2=Http::get('https://api.opensea.io/api/v1/asset/0x59462feab184428cb7caf4a6c885ffcd84fa2396/1');
-        $add2=json_decode($add2->body());
+        // $add2=Http::get('https://api.opensea.io/api/v1/asset/0x59462feab184428cb7caf4a6c885ffcd84fa2396/1');
+        // $add2=json_decode($add2->body());
 
 
-        dd($add2,$add);
+        // dd($add2,$add);
 
 
         return view('user.detail', compact('data1', 'data12'));
