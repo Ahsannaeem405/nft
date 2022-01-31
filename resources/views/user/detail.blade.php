@@ -636,6 +636,7 @@
         <script>
             function myFunction() {
   /* Get the text field */
+  alert(12);
   var copyText = document.getElementById("myInput");
 
   /* Select the text field */
