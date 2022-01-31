@@ -224,9 +224,18 @@ return view('admin.edit');
 
         $data=Http::get('https://api.opensea.io/api/v1/collection/'.$slug.'');
         $data=json_decode($data->body());
+
         // dd($data->collection);
         $data1 = $data->collection;
-        return view('user.detail', compact('data1'));
+
+
+        $data12=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=12');
+        $data12=json_decode($data12->body());
+
+
+
+
+        return view('user.detail', compact('data1', 'data12'));
 
 
 
