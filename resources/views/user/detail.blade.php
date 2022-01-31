@@ -11,6 +11,10 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <!--Home page silder end-->
     <!--top collection start-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <style>
         .sharelink:hover {
@@ -48,7 +52,7 @@
                                             {{-- <img style="width: 100%; border-radius: 50%;object-fit: contain;object-position: center center;"
                                                 src="@if(isset($data1->featured_image_url)){{ $data1->featured_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif" > --}}
 
-                                                <img style="width: 100%; border-radius: 50%;object-fit: contain;object-position: center center;" src="@if(isset($data1->large_image_url)) {{ $data1->large_image_url}} @else  https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif  " alt="">
+                                                <img class="rounded-circle"  width="304" height="236" style="width: 100%; border-radius: 50%;object-fit: contain;object-position: center center;" src="@if(isset($data1->large_image_url)) {{ $data1->large_image_url}} @else  https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif  " alt="">
                                         </div>
                                         <div class="col-lg-8 col-xl-8 col-md-8  col-10" style=" ">
                                             <span
