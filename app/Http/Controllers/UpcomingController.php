@@ -232,7 +232,7 @@ return view('admin.edit');
         $data12=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=12');
         $data12=json_decode($data12->body());
 
-        $add2=Http::get('https://api.opensea.io/api/v1/asset/0x59462feab184428cb7caf4a6c885ffcd84fa2396/1/');
+        $add2=Http::get('https://api.opensea.io/api/v1/asset/0x59462feab184428cb7caf4a6c885ffcd84fa2396/1');
         $add3=json_decode($add2->body());
 
 
