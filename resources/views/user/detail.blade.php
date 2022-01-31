@@ -444,7 +444,7 @@
                     <div class="explore-nftbody">
                         <div class="row">
                             @foreach ($data12 as $datass)
-
+@dd($datass)
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
                                     <a href="{{ url('/overview', [$datass->slug]) }}" style="text-decoration: none;">
 

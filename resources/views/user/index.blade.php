@@ -281,7 +281,7 @@
                         <div class="row mb-3">
                             @foreach ( $data1 as $datass )
 
-@dd($datass)
+
                             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 p-0">
                                 <a href="{{url('/overview',[$datass->slug])}}" style="text-decoration: none;">
 
