@@ -72,7 +72,7 @@
                                                                         fill="#8A8A8A"></path>
                                                                 </svg>
 
-                                                                ETH
+                                                                {{$data1->primary_asset_contracts[0]->symbol}}
                                                             </p>
 
                                                         </div>

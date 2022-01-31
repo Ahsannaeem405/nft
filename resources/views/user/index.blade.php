@@ -291,7 +291,7 @@
                                             src=" @if(isset( $datass->banner_image_url)) {{ $datass->banner_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg  @endif" />
                                         <div class="card-bio ml-1" style="line-height: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">
                                             {{$datass->name}}<br>
-                                            <span>Avator</span>
+                                            <span>{{$data1->primary_asset_contracts[0]->symbol}}</span>
                                         </div>
                                         <p class="card-title">
                                             <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
@@ -300,7 +300,7 @@
                                                     d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
                                                     fill="#8A8A8A"></path>
                                             </svg>
-                                            ETH
+                                            {{$data1->primary_asset_contracts[0]->symbol}}
                                         </p>
                                     </div>
                                     <div class="card-body">
