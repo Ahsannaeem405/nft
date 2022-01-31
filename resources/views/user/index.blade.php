@@ -350,9 +350,9 @@
                         <div class="row">
                             @foreach ( $data1 as $datass )
 
-                            <a href="{{url('/overview',[$datass->slug])}}">
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
-                                <a href="#">
+                                <a href="{{url('/overview',[$datass->slug])}}">
+
                                     <div class="explore-card mt-3 mx-3">
                                         <div class="explore-card-img">
                                             <img
@@ -379,7 +379,7 @@
                                     </div>
                                 </a>
                             </div>
-                            </a>
+
                             @endforeach
 
 
