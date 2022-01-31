@@ -79,8 +79,9 @@
                                                             ${{ number_format((float)$datas->stats->market_cap, 4, '.', '') }}
                                                             <div class="text-success text-right">{{  number_format((float)$datas->stats->average_price, 4, '.', '') }}</div>
                                                         </div>
+                                                    </a>
                                                     </li>
-                                                </a>
+
                                                     @endforeach
                                                     {{-- <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
