@@ -24,6 +24,9 @@ Route::get('/', [App\Http\Controllers\UpcomingController::class, 'view_index']);
 
 Route::get('/detail', [App\Http\Controllers\UpcomingController::class, 'detail']);
 
+Route::post('/newsletter/send', [App\Http\Controllers\UpcomingController::class, 'newsletter']);
+
+
 
 Route::get('/contact', function () {
     return view('user.contact');
@@ -53,6 +56,9 @@ Route::group(['middleware' => 'auth'], function () {
    Route::get('/disapproved/{id}', [App\Http\Controllers\UpcomingController::class, 'disapproved']);
 
    Route::get('/edit/profile', [App\Http\Controllers\UpcomingController::class, 'edit']);
+
+   Route::post('/send/mail', [App\Http\Controllers\UpcomingController::class, 'mail']);
+
 
 
 

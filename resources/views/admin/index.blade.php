@@ -10,6 +10,13 @@
 
     <!-- ########## START: MAIN PANEL ########## -->
     <div class="br-mainpanel">
+
+        @if(session()->has('success'))
+    <div class="alert alert-success">
+        {{ session()->get('success') }}
+    </div>
+@endif
+
         <div class="pd-30">
             <h4 class="tx-gray-800 mg-b-5">Dashboard</h4>
         </div><!-- d-flex -->

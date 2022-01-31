@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Newsletter;
 use App\Models\Upcoming;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Mail\Mailable;
 
 class UpcomingController extends Controller
 {
@@ -23,6 +25,33 @@ class UpcomingController extends Controller
 return view('user.detail');
      }
 
+     public function mail(Request $request){
+
+$new = Newsletter::all();
+// dd($request);
+foreach($new as $news)
+{
+
+    $details = [
+         'title' => $request->subject,
+        'body' => $request->msg
+    ];
+
+    \Mail::to('azeemhanif328@gmail.com')->send(new \App\Mail\MyTestMail($details));
+
+
+}
+
+// dd("Email is Sent.");
+return redirect('/admin')->with('success',  'Submitted Successfully');
+
+
+
+// return view('admin.mail_newsletter', compact('new'));
+
+
+     }
+
     function upcoming(){
 
         $view = Upcoming::where('status', 1)->get();
@@ -31,6 +60,22 @@ return view('user.detail');
         return view('user.upcoming', compact('view'));
 
     }
+
+
+
+    function newsletter(Request $request){
+
+            $news = new Newsletter();
+
+            $news->email = $request->email;
+            $news->save();
+            return back()->with('success',  'Submitted Successfully');
+
+
+    }
+
+
+
 
 
     function view_index(){
