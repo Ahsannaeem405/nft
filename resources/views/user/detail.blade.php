@@ -95,6 +95,7 @@
                                                     </div>
                                                         <div class="col-3" style="    padding-left: unset;">
                     <i class="fa fa-clone" aria-hidden="true" onclick="myFunction()"></i>
+                    <button onclick="myFunction()">Copy text</button>
                     </div>
                 </div>
                                                         </div>
