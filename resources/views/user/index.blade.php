@@ -289,7 +289,7 @@
                                     <div class="card-head">
                                         <img
                                             src=" @if(isset( $datass->banner_image_url)) {{ $datass->banner_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg  @endif" />
-                                        <div class="card-bio ml-1" style="line-height: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">
+                                        <div class="card-bio ml-1" style="width: 148px;line-height: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">
                                             {{$datass->name}}<br>
                                             <span>{{$datass->primary_asset_contracts[0]->symbol}}</span>
                                         </div>
