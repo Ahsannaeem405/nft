@@ -79,11 +79,15 @@
 
 
 
-<div class="col-8">
+<div class="col-8" style="line-height: 20px;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+word-break: break-all;">
 
                                                             <p
                                                                 style="      font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
-                                                              <span style="    overflow: hidden;word-break: break-all;"> {{$data1->slug}}</span>
+                                                          {{$data1->slug}}
                                                                 &nbsp;&nbsp;
 
                                                             </p>
