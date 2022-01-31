@@ -281,7 +281,7 @@
                         <div class="row mb-3">
                             @foreach ( $data1 as $datass )
 
-
+{{-- @dd($datass) --}}
                             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 p-0">
                                 <a href="{{url('/overview',[$datass->slug])}}" style="text-decoration: none;">
 
@@ -291,7 +291,7 @@
                                             src=" @if(isset( $datass->banner_image_url)) {{ $datass->banner_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg  @endif" />
                                         <div class="card-bio ml-1" style="line-height: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">
                                             {{$datass->name}}<br>
-                                            <span>{{$datass->symbol}}</span>
+                                            <span>Avator</span>
                                         </div>
                                         <p class="card-title">
                                             <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
