@@ -66,7 +66,7 @@
                                                     $i = 1;
                                                     ?>
                                                     @foreach ($data as $datas )
-                                                    <a href="{{url('/overview',[$datas->slug])}}">
+                                                    <a  h ref="{{url('/overview',[$datas->slug])}}" style="text-decoration: none;">
                                                     <li style="    color: black;" class="list-group-item d-flex justify-content-between align-items-center border-top">
 
 
@@ -159,7 +159,7 @@
                                                     $i = 1;
                                                     ?>
                                                            @foreach ($data as $datas )
-                                                           <a href="{{url('/overview',[$datas->slug])}}">
+                                                           <a href="{{url('/overview',[$datas->slug])}}" style="text-decoration: none;">
                                                            <li style="color: black"
                                                                class="list-group-item d-flex justify-content-between align-items-center border-top">
                                                                <div class="d-flex justify-content-center align-items-center">
@@ -203,7 +203,7 @@
                                                     ?>
 
 @foreach ($data as $datas )
-<a href="{{url('/overview',[$datas->slug])}}">
+<a href="{{url('/overview',[$datas->slug])}}" style="text-decoration: none;">
 <li style="color: black"
     class="list-group-item d-flex justify-content-between align-items-center border-top">
     <div class="d-flex justify-content-center align-items-center">
