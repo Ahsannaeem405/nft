@@ -33,7 +33,7 @@
         }
 
     </style>
-     {{-- @dd($data1) --}}
+     @dd($data1)
     <div class="container my-5">
         <div class="row">
             <div class="col-12" style="    padding: unset;">
@@ -444,7 +444,6 @@
                     <div class="explore-nftbody">
                         <div class="row">
                             @foreach ($data12 as $datass)
-@dd($datass->primary_asset_contracts)
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
                                     <a href="{{ url('/overview', [$datass->slug]) }}" style="text-decoration: none;">
 
