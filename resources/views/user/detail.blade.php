@@ -79,14 +79,9 @@
 
 
 
-<div class="col-8" style="line-height: 20px;
-white-space: nowrap;
-text-overflow: ellipsis;
-overflow: hidden;
-word-break: break-all;">
+<div class="col-8" style=";">
 
-                                                            <p
-                                                                style="      font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
+                                                            <p style="      font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
                                                           {{$data1->slug}}
                                                                 &nbsp;&nbsp;
 
