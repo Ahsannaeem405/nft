@@ -300,7 +300,7 @@
                                                     d="M3.5 11.448L0 6.417 3.5 8.53 7 6.417l-3.5 5.03zm0-3.5L0 5.76 3.5 0 7 5.76 3.5 7.948z"
                                                     fill="#8A8A8A"></path>
                                             </svg>
-                                            {{$datass->primary_asset_contracts[0]->symbol}}
+                                            ETH
                                         </p>
                                     </div>
                                     <div class="card-body">
