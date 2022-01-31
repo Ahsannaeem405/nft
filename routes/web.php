@@ -52,7 +52,6 @@ Route::group(['middleware' => 'auth'], function () {
 
    Route::get('/disapproved/{id}', [App\Http\Controllers\UpcomingController::class, 'disapproved']);
 
-
    Route::get('/edit/profile', [App\Http\Controllers\UpcomingController::class, 'edit']);
 
 
