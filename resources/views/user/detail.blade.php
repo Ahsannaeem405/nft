@@ -125,7 +125,7 @@
                                                     </div>
                                                     <div class="col-12" style="    margin-top: -11px;">
                                                         <span
-                                                            style="    border-radius: 6px;font-size: 14px;padding: 3px 10px; color: #269958;   background: #f9f9f9;">{{$data1->symbol}}
+                                                            style="    border-radius: 6px;font-size: 14px;padding: 3px 10px; color: #269958;   background: #f9f9f9;">avatar
                                                         </span>
                                                     </div>
                                                 </div>
