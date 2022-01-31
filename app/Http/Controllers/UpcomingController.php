@@ -233,10 +233,12 @@ return view('admin.edit');
         $data12=json_decode($data12->body());
 
         $add2=Http::get('https://api.opensea.io/api/v1/asset/'.$add.'/1');
+
+        dd($add2, 2);
         $add2=json_decode($add2->body());
 
 
-        dd($add2, 2);
+
 
 
         return view('user.detail', compact('data1', 'data12'));
