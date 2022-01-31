@@ -227,11 +227,15 @@ return view('admin.edit');
 
         // dd($data->collection);
         $data1 = $data->collection;
-
+       $add = $data1->primary_asset_contracts[0]->address ;
 
         $data12=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=12');
         $data12=json_decode($data12->body());
 
+        $add2=Http::get('https://api.opensea.io/api/v1/asset_contract/'.$add.'');
+        $add2=json_decode($add2->body());
+
+dd($add2);
 
 
 
