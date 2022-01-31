@@ -224,8 +224,9 @@ return view('admin.edit');
 
         $data=Http::get('https://api.opensea.io/api/v1/collection/'.$slug.'');
         $data=json_decode($data->body());
+        $data = $data->collection;
+        return view('user.detail', compact('data'));
 
-        dd($data);
 
 
     }
