@@ -45,8 +45,10 @@
                                 <div class="mt-4 mx-2" style="    padding: 10px;">
                                     <div class="row">
                                         <div class="col-2" style="text-align: center; padding: unset;">
-                                            <img style="width: 100%; border-radius: 50%;object-fit: contain;object-position: center center;"
-                                                src="@if(isset($data1->featured_image_url)){{ $data1->featured_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg" @endif>
+                                            {{-- <img style="width: 100%; border-radius: 50%;object-fit: contain;object-position: center center;"
+                                                src="@if(isset($data1->featured_image_url)){{ $data1->featured_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg" @endif> --}}
+
+                                                <img src="{{ $data1->featured_image_url}} " alt="">
                                         </div>
                                         <div class="col-lg-8 col-xl-8 col-md-8  col-10" style=" ">
                                             <span
