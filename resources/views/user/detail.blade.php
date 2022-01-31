@@ -131,10 +131,15 @@
                                     <div class="row">
                                         <div class="col-12" style="    margin-top: 23px;">
                                             <p>
-                                                <p>{{$data1->description}} </p>
+                                                <p>
 
 
-                                                {{-- <a data-toggle="modal" data-target="#exampleModal" style="    color: blue;text-decoration: none">...  [View All]</a> </p> --}}
+                                                    {{ substr($data1->description, 0, 100) }}
+                                            <a data-toggle="modal" data-target="#exampleModal" style="    color: blue;text-decoration: none">...  [View All]</a>
+
+                                                </p>
+
+
                                         </div>
 
                                         <div class="col-12" style="    margin-top: 23px;    text-align: end;">
