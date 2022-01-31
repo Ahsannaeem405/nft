@@ -87,15 +87,15 @@
 
 
                                                             <p  style="       margin: auto;   font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
-                                                   <span id="myInput">    {{$data1->slug}}</span>
+                                                   <span id="sample">    {{$data1->slug}}</span>
                                                                 &nbsp;&nbsp;
 
                                                             </p>
                                                         </div>
                                                     </div>
                                                         <div class="col-3" style="    padding-left: unset;">
-                    <i class="fa fa-clone" aria-hidden="true" onclick="myFunction()"></i>
-                    <button onclick="myFunction()">Copy text</button>
+                    <i class="fa fa-clone" aria-hidden="true" onclick="CopyToClipboard('sample');return false;"></i>
+
                     </div>
                 </div>
                                                         </div>
@@ -635,20 +635,14 @@
         }
         </script>
         <script>
-            function myFunction() {
-  /* Get the text field */
-  alert(12);
-  var copyText = document.getElementById("myInput");
-
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-   /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyText.value);
-
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+  function CopyToClipboard(id)
+{
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
 }
         </script>
 @endsection
