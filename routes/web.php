@@ -71,4 +71,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/overview/{id}', [App\Http\Controllers\UpcomingController::class, 'overview']);
+Route::get('/overview/{slug}', [App\Http\Controllers\UpcomingController::class, 'overview']);

@@ -218,17 +218,18 @@ return view('admin.edit');
     }
 
 
-    public function overview($id){
-        dd($id);
+    public function overview($slug){
+
+
+
+        $data=Http::get('https://api.opensea.io/api/v1/collection/'.$slug.'');
+        $data=json_decode($data->body());
+
+        dd($data);
+
 
     }
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Upcoming  $upcoming
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(Request $request)
     {
 
