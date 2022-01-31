@@ -67,7 +67,7 @@
                                                     ?>
                                                     @foreach ($data as $datas )
                                                     <li class="list-group-item d-flex justify-content-between align-items-center border-top">
-<a href="{{url('/admin/overview',[$datas->slug])}}">
+<a href="{{url('/overview',[$datas->slug])}}">
 
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>

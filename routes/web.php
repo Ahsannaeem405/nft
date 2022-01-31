@@ -55,8 +55,6 @@ Route::group(['middleware' => 'auth'], function () {
 
    Route::get('/edit/profile', [App\Http\Controllers\UpcomingController::class, 'edit']);
 
-   Route::get('/overview/{id}', [App\Http\Controllers\UpcomingController::class, 'overview']);
-
 
 
 
@@ -73,3 +71,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/overview/{id}', [App\Http\Controllers\UpcomingController::class, 'overview']);
