@@ -236,7 +236,7 @@ return view('admin.edit');
         $add3=json_decode($add2->body());
 
 
-        dd($add3,$data1);
+        dd($add3,$add);
 
 
         return view('user.detail', compact('data1', 'data12'));
