@@ -125,7 +125,7 @@
                                                     </div>
                                                     <div class="col-12" style="    margin-top: -11px;">
                                                         <span
-                                                            style="    border-radius: 6px;font-size: 14px;padding: 3px 10px; color: #269958;   background: #f9f9f9;">avatar
+                                                            style="    border-radius: 6px;font-size: 14px;padding: 3px 10px; color: #269958;   background: #f9f9f9;">ava
                                                         </span>
                                                     </div>
                                                 </div>
@@ -444,7 +444,7 @@
                     <div class="explore-nftbody">
                         <div class="row">
                             @foreach ($data12 as $datass)
-@dd($datass)
+@dd($datass->primary_asset_contracts)
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
                                     <a href="{{ url('/overview', [$datass->slug]) }}" style="text-decoration: none;">
 
