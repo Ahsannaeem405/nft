@@ -46,7 +46,7 @@
                                     <div class="row">
                                         <div class="col-2" style="text-align: center; padding: unset;">
                                             <img style="       width: 100%; border-radius: 50%;object-fit: contain;object-position: center center;"
-                                                src="https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg" />
+                                                src="  @if(isset($data1->large_image_url)) {{ $datass->large_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg" @endif />
                                         </div>
                                         <div class="col-lg-8 col-xl-8 col-md-8  col-10" style=" ">
                                             <span
