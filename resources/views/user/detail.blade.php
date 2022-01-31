@@ -133,7 +133,7 @@
                                             <p>
 
 
-                                                    {{Str::limit($data1->description, 100)}}
+                                                    {{Str::limit($data1->description, 120)}}
                                                     {{-- {{ substr($data1->description, 0, 100) }} --}}
                                             <a data-toggle="modal" data-target="#exampleModal" style="    color: blue;text-decoration: none">...  [View All]</a>
 
