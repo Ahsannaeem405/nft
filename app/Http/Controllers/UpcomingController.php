@@ -22,6 +22,7 @@ class UpcomingController extends Controller
 
 return view('user.detail');
      }
+
     function upcoming(){
 
         $view = Upcoming::where('status', 1)->get();
@@ -216,6 +217,11 @@ return view('user.detail');
 return view('admin.edit');
     }
 
+
+    public function overview($id){
+        dd($id);
+
+    }
     /**
      * Update the specified resource in storage.
      *

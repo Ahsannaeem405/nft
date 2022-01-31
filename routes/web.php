@@ -55,6 +55,9 @@ Route::group(['middleware' => 'auth'], function () {
 
    Route::get('/edit/profile', [App\Http\Controllers\UpcomingController::class, 'edit']);
 
+   Route::get('/overview/{id}', [App\Http\Controllers\UpcomingController::class, 'overview']);
+
+
 
 
    Route::post('/update', [App\Http\Controllers\UpcomingController::class, 'update']);

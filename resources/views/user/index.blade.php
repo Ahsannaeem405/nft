@@ -66,8 +66,9 @@
                                                     $i = 1;
                                                     ?>
                                                     @foreach ($data as $datas )
-                                                    <li
-                                                        class="list-group-item d-flex justify-content-between align-items-center border-top">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center border-top">
+<a href="{{url('/admin/overview',[$datas->slug])}}">
+
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
                                                             <img src="@if(isset($datas->featured_image_url)) {{ $datas->featured_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
@@ -79,6 +80,7 @@
                                                             <div class="text-success text-right">{{  number_format((float)$datas->stats->average_price, 4, '.', '') }}</div>
                                                         </div>
                                                     </li>
+                                                </a>
                                                     @endforeach
                                                     {{-- <li
                                                         class="list-group-item d-flex justify-content-between align-items-center border-top">
