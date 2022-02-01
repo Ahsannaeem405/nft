@@ -219,7 +219,7 @@ height: 64px !important;
                                                         </p>
 
                                                         <h5 style="    margin-bottom: 3px;">
-                                                            ${{ $feat->stats->unit_price }}</h5>
+                                                            ${{ $feat->unit_price }}</h5>
 
                                                     </div>
                                                     <div class="col-4" style="  ">
