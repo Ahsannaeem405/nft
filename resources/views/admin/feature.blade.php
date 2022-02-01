@@ -66,17 +66,10 @@
                                     <td>{{ $views->email }}</td>
                                     <td>{{ $views->date }}</td>
                                     <td>
-                                        @if ($views->status == 1)
-                                            <Button class="btn btn-success">Approved</Button>
-
-                                        @elseif($views->status == 2)
-                                            <Button class="btn btn-danger">Dispproved</Button>
-
-
+                                        @if ($views->fetured_status == 1)
+                                            <Button class="btn btn-success">Featured</Button>
                                         @else
-
                                             <Button class="btn btn-primary">Pending</Button>
-
                                         @endif
                                     </td>
                                     <td>
@@ -89,11 +82,11 @@
                                             <div class="dropdown-menu dropdown-menu-header wd-200">
                                                 <ul class="list-unstyled user-profile-nav">
 
-                                                    <li><a href="{{ url('/admin/approved', $views->id) }}"
+                                                    <li><a href="{{ url('/admin/featured_approve', $views->id) }}"
                                                             style="    font-size: 15px;">Approved</a></li>
 
                                                     <li>
-                                                        <a href="{{ url('/admin/disapproved', $views->id) }}"
+                                                        <a href="{{ url('/admin/featured_disapprove', $views->id) }}"
                                                             style="    font-size: 15px;">Disapproved</a>
                                                     </li>
                                                 </ul>

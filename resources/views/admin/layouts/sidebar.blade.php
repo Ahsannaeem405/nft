@@ -9,7 +9,8 @@
 
 
 
-            <div class="br-sideleft-menu" style="    margin-top: 15px;">
+            <div class="br-sideleft-menu" style="
+                    margin-top: 15px;">
                 <a href="{{ url("2") }}" class="br-menu-link active">
                     <div class="br-menu-item">
                         <i class="fa fa-dashboard"></i>
@@ -20,6 +21,12 @@
                     <div class="br-menu-item">
                         <i class="fa fa-plus" aria-hidden="true"></i>
                         <span class="menu-item-label">Upcoming</span>
+                    </div><!-- menu-item -->
+                </a><!-- br-menu-link -->
+                <a href="{{url('/admin/featured')}}" class="br-menu-link">
+                    <div class="br-menu-item">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <span class="menu-item-label">Featured</span>
                     </div><!-- menu-item -->
                 </a><!-- br-menu-link -->
 

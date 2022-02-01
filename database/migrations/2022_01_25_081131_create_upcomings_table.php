@@ -33,7 +33,7 @@ class CreateUpcomingsTable extends Migration
             $table->string('blockchain')->nullable();
             $table->string('derivative')->nullable();
             $table->string('status')->nullable();
-
+            $table->string('fetured_status')->nullable();
             $table->timestamps();
         });
     }

@@ -52,12 +52,18 @@ Route::group(['middleware' => 'auth'], function () {
    Route::get('/', [App\Http\Controllers\UpcomingController::class, 'index']);
    Route::get('/upcoming/view', [App\Http\Controllers\UpcomingController::class, 'show']);
    Route::get('/approved/{id}', [App\Http\Controllers\UpcomingController::class, 'approved']);
+   Route::get('/featured_approve/{id}', [App\Http\Controllers\UpcomingController::class, 'featured_approve']);
 
+   Route::get('/featured_disapprove/{id}', [App\Http\Controllers\UpcomingController::class, 'featured_disapprove']);
    Route::get('/disapproved/{id}', [App\Http\Controllers\UpcomingController::class, 'disapproved']);
 
    Route::get('/edit/profile', [App\Http\Controllers\UpcomingController::class, 'edit']);
 
+   Route::get('/featured', [App\Http\Controllers\UpcomingController::class, 'featured']);
+
    Route::post('/send/mail', [App\Http\Controllers\UpcomingController::class, 'mail']);
+
+
 
 
 

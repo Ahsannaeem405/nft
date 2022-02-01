@@ -37,27 +37,21 @@ foreach($new as $news)
         'body' => $request->msg
     ];
 
-    \Mail::to('azeemhanif328@gmail.com')->send(new \App\Mail\MyTestMail($details));
+    \Mail::to($news->email)->send(new \App\Mail\MyTestMail($details));
 
 
 }
 
-// dd("Email is Sent.");
 return redirect('/admin')->with('success',  'Submitted Successfully');
-
-
-
-// return view('admin.mail_newsletter', compact('new'));
-
-
      }
 
     function upcoming(){
 
         $view = Upcoming::where('status', 1)->get();
+        $feat = Upcoming::where('status', 1)->where('fetured_status', 1)->get();
 
 
-        return view('user.upcoming', compact('view'));
+        return view('user.upcoming', compact('view', 'feat'));
 
     }
 
@@ -106,6 +100,8 @@ return redirect('/admin')->with('success',  'Submitted Successfully');
 
 
 
+
+
      public function approved($id){
 
         $upc = Upcoming::find($id);
@@ -125,6 +121,30 @@ return redirect('/admin')->with('success',  'Submitted Successfully');
         return back()->with('success', 'Updated Successfully');
 
      }
+
+
+
+     public function featured_approve($id){
+
+        $upc = Upcoming::find($id);
+        $upc->fetured_status = 1;
+
+        $upc->save();
+        return back()->with('success', 'Updated Successfully');
+
+     }
+
+
+
+     public function featured_disapprove($id){
+
+        $upc = Upcoming::find($id);
+        $upc->fetured_status = 2;
+        $upc->save();
+        return back()->with('success', 'Updated Successfully');
+
+     }
+
 
 
 
@@ -309,6 +329,14 @@ return view('admin.edit');
 
         $admin->update();
         return back()->with('success', 'Updated Successfully');
+    }
+
+
+    public function featured(){
+
+        $view = Upcoming::orderBy('id', 'desc')->where('status', '1') ->get();
+
+        return view('admin.feature', compact('view'));
     }
 
     /**
