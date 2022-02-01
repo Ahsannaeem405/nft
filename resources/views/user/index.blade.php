@@ -404,7 +404,8 @@
 
                             <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4  pt-4 px-3">
                                 <div class="upcoming-card ">
-                                    <a href="#">
+                                    <a href="{{url('/featured/overview',[$feats->id])}}" style="text-decoration: none;">
+
                                     <div class="upcoming-card-img">
                                         <img
                                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEMfrw6hmh-H4Oz0kvXJH_7RezLdGdxVnycQ&usqp=CAU" />

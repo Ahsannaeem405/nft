@@ -282,6 +282,13 @@ return redirect('/admin')->with('success',  'Submitted Successfully');
 return view('admin.edit');
     }
 
+    public function featured_overview($id)
+    {
+dd($id);
+    }
+
+
+
 
     public function overview($slug){
 
