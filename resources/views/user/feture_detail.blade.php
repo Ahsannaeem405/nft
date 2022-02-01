@@ -219,7 +219,7 @@ height: 64px !important;
                                                         </p>
 
                                                         <h5 style="    margin-bottom: 3px;">
-                                                            ${{ $feat->unit_price }}</h5>
+                                                            ${{ $feat->stats->unit_price }}</h5>
 
                                                     </div>
                                                     <div class="col-4" style="  ">
@@ -350,7 +350,7 @@ height: 64px !important;
                                                         </p>
 
                                                         <h5 style="    margin-bottom: 3px;">
-                                                            ${{ number_format((float) $feta->unit_price, 4, '.', '') }}
+                                                            ${{ number_format((float) $feat->unit_price, 4, '.', '') }}
                                                         </h5>
 
                                                     </div>
