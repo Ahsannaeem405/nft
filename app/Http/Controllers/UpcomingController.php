@@ -81,6 +81,7 @@ return redirect('/admin')->with('success',  'Submitted Successfully');
 
 
 
+    $feat = Upcoming::where('status', 1)->where('fetured_status', 1)->get();
 
      $data=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=6');
         $data=json_decode($data->body());
@@ -90,7 +91,7 @@ return redirect('/admin')->with('success',  'Submitted Successfully');
         $data1=json_decode($data1->body());
 // dd($data);
 
-        return view('user.index', compact('data', 'data1'));
+        return view('user.index', compact('data', 'data1', 'feat'));
 
 
     }
