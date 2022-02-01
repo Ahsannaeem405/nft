@@ -391,7 +391,7 @@
 
         {{-- featured section --}}
 
-        <div class="row my-4">
+        <div class="row my-5">
             <div class="col-12">
                 <div class="explore-nft">
                     <div class="explore-nft-header">
