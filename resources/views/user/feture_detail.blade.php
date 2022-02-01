@@ -62,12 +62,12 @@ height: 64px !important;
                                             object-position: center center;
                                             height: 80px;
                                      "
-                                                src="@if (isset($data1->large_image_url)) {{ $data1->large_image_url }} @else  https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif  " alt="">
+                                                src="@if (isset($feat->large_image_url)) {{ $feat->large_image_url }} @else https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEMfrw6hmh-H4Oz0kvXJH_7RezLdGdxVnycQ&usqp=CAU @endif  " alt="">
                                         </div>
                                         <div class="col-lg-8 col-xl-8 col-md-8  col-10" style=" ">
                                             <span
                                                 style="display: block;font-weight: 700;font-size: 24px;line-height: 36px;">
-                                                {{ $data1->name }}
+                                                {{ $feat->name }}
                                             </span>
                                             <div class="col-12" style="padding: unset;    margin-top: 10px;">
                                                 <div class="row">
@@ -107,7 +107,7 @@ height: 64px !important;
 
                                                                         <p id="sample"
                                                                             style="       margin: auto;   font-size: 12px;  text-align: center;padding: 3px;color: #535572;">
-                                                                            <span> {{ $data1->slug }}</span>
+                                                                            <span> {{ $feat->name }}</span>
                                                                             &nbsp;&nbsp;
 
                                                                         </p>
@@ -129,18 +129,14 @@ height: 64px !important;
                                                                 style="   color: white;    font-size: 14px;  text-align: center;padding: 5px;">
 
                                                                 <i class="fas fa-cube"></i>
-                                                                {{ $data1->dev_seller_fee_basis_points }}NFTs
+                                                                {{ $feat->unit_price }}NFTs
 
 
                                                             </p>
 
                                                         </div>
                                                     </div>
-                                                    <div class="col-12" style="    margin-top: -11px;">
-                                                        <span
-                                                            style="    border-radius: 6px;font-size: 14px;padding: 3px 10px; color: #269958;   background: #f9f9f9;">{{$data1->primary_asset_contracts[0]->symbol}}
-                                                        </span>
-                                                    </div>
+
                                                 </div>
 
                                             </div>
@@ -169,7 +165,7 @@ height: 64px !important;
                                             <p>
 
 
-                                                {{ Str::limit($data1->description, 120) }}
+                                                {{ Str::limit($feat->short_description, 120) }}
                                                 {{-- {{ substr($data1->description, 0, 100) }} --}}
                                                 <a data-toggle="modal" data-target="#exampleModal"
                                                     style="    color: blue;text-decoration: none">... [View All]</a>
@@ -223,9 +219,8 @@ height: 64px !important;
                                                         </p>
 
                                                         <h5 style="    margin-bottom: 3px;">
-                                                            ${{ $data1->stats->one_day_sales }}</h5>
-                                                        <span style="color: #5cc489;    font-weight: 700;">+
-                                                            ${{ $data1->stats->one_day_sales }}%</span>
+                                                            ${{ $data1->stats->unit_price }}</h5>
+
                                                     </div>
                                                     <div class="col-4" style="  ">
                                                         <div
@@ -264,10 +259,10 @@ height: 64px !important;
                                                         </p>
 
                                                         <h5 style="    margin-bottom: 3px;">
-                                                            ${{ number_format((float) $data1->stats->one_day_volume, 4, '.', '') }}
+                                                            ${{ number_format((float) $feat->unit_price, 4, '.', '') }}
                                                         </h5>
                                                         <span style="color: #5cc489;    font-weight: 700;">+
-                                                            {{ number_format((float) $data1->stats->one_day_sales, 4, '.', '') }}
+                                                            {{ number_format((float) $feat->unit_price, 4, '.', '') }}
                                                             %</span>
                                                     </div>
                                                     <div class="col-4" style="  ">
@@ -314,10 +309,9 @@ height: 64px !important;
                                                         </p>
 
                                                         <h5 style="    margin-bottom: 3px;">
-                                                            ${{ number_format((float) $data1->stats->floor_price, 4, '.', '') }}
+                                                            ${{ number_format((float) $feat->unit_price, 4, '.', '') }}
                                                         </h5>
-                                                        <span
-                                                            style="color: #5cc489;    font-weight: 700;">+{{ number_format((float) $data1->stats->one_day_sales, 4, '.', '') }}%</span>
+
                                                     </div>
                                                     <div class="col-4" style="  ">
                                                         <div
@@ -356,10 +350,9 @@ height: 64px !important;
                                                         </p>
 
                                                         <h5 style="    margin-bottom: 3px;">
-                                                            ${{ number_format((float) $data1->stats->market_cap, 4, '.', '') }}
+                                                            ${{ number_format((float) $feta->unit_price, 4, '.', '') }}
                                                         </h5>
-                                                        <span
-                                                            style="color: #5cc489;    font-weight: 700;">+{{ $data1->stats->one_day_sales }}%</span>
+
                                                     </div>
                                                     <div class="col-4" style="  ">
                                                         <div
