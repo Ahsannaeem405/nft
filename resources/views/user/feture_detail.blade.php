@@ -238,10 +238,54 @@ height: 64px !important;
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-lg-6 col-md-6 col-12"
+                                            style="padding-left:unset;    margin-bottom: 10px;">
+
+                                            <div style="  padding: 15px; background: #f9f9f9;border-radius: 12px;">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <p
+                                                            style="font-family: Poppins; color:#535572;  margin-bottom: 3px;  font-size: 15px;">
+                                                            Volume
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                class="data-box-small_infoIcon__yr6OS">
+                                                                <path
+                                                                    d="M6 0a6 6 0 100 12A6 6 0 006 0zm0 2.458a.86.86 0 110 1.718.86.86 0 010-1.718zm1.288 7.085H4.71v-.428h.429V5.25h-.43v-.43h2.148v4.295h.429v.428z"
+                                                                    fill="#BDBDBD"></path>
+                                                            </svg>
+
+
+                                                        </p>
+
+                                                        <h5 style="    margin-bottom: 3px;">
+                                                            ${{ number_format((float) $feat->unit_price, 4, '.', '') }}
+                                                        </h5>
+                                                        <span style="color: #5cc489;    font-weight: 700;">+
+                                                            {{ number_format((float) $feat->unit_price, 4, '.', '') }}
+                                                            %</span>
+                                                    </div>
+                                                    <div class="col-4" style="  ">
+                                                        <div
+                                                            style="border-radius: 6px;background: #f2f2f2;    width: 52px; ">
+
+                                                            <p
+                                                                style="      font-size: 13px;  text-align: center;padding: 3px;color: #5a66f9;">
+                                                                #379
+
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                     </div>
 
                                 </div>
+
 
 
                             </div>
