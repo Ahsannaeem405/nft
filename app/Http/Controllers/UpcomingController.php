@@ -284,7 +284,10 @@ return view('admin.edit');
 
     public function featured_overview($id)
     {
-dd($id);
+
+        $feat = Upcoming::find($id);
+        return view('user.feture_detail', compact('feat'));
+
     }
 
 
