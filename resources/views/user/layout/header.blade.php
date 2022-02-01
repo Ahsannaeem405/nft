@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-light">
 
-    <a class="navbar-brand" href="{\{url('/')}}">
+    <a class="navbar-brand" href="{{url('/')}}">
         <img src="{{asset('/img/logo.png')}}" alt="logo-pic" />
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
