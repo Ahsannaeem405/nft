@@ -100,66 +100,7 @@
 
     {{-- Featured section --}}
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="upcoming-pageheading mt-5 text-center mx-1 px-1 mx-md-5 px-md-5">
-                    <h2 class="mb-3">Featured NFT</h2>
 
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid">
-
-        <div class="row my-3 mx-xl-3 mx-lg-1 mx-1 d-flex justify-content-center">
-
-            @foreach ($feat as  $feats)
-
-
-            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4  pt-4 px-3">
-                <div class="upcoming-card ">
-                    <a href="#">
-                    <div class="upcoming-card-img">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEMfrw6hmh-H4Oz0kvXJH_7RezLdGdxVnycQ&usqp=CAU" />
-
-                        <div class="card-user-info p-2">
-                            <div class="d-flex justify-content-between">
-                                <h3>{{ $feats->name}}</h3>
-
-                            </div>
-
-                            <p class="mt-1">{{ $feats->short_description}}</p>
-                        </div>
-                    </div>
-                    <div class="upcoming-card-data p-2">
-
-                        <div class="d-flex w-100 justify-content-between align-items-center">
-                            <div class="card-time-details w-50">
-                                <div class="persale-details">
-                                    <h4>{{$feats->blockchain}}:<span class="px-2">{{$feats->date}}</span></h4>
-                                    <p>{{ $feats->time}} </p>
-                                </div>
-
-
-                            </div>
-                            <div class="card-amount-details">
-                                <p>Unit Price: {{ $feats->unit_price}}</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    </a>
-                </div>
-            </div>
-
-            @endforeach
-        </div>
-    </div>
     {{-- end featured section --}}
     <!--From Pop Up-->
     <div id="add-project">
