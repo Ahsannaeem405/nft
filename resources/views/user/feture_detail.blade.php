@@ -219,7 +219,7 @@ height: 64px !important;
                                                         </p>
 
                                                         <h5 style="    margin-bottom: 3px;">
-                                                            ${{ $data1->stats->unit_price }}</h5>
+                                                            ${{ $feat->unit_price }}</h5>
 
                                                     </div>
                                                     <div class="col-4" style="  ">
@@ -605,7 +605,7 @@ height: 64px !important;
                             </button>
                         </div>
                         <div class="modal-body" style="    overflow: scroll;max-height: 209px;">
-                            {{ $data1->description }}
+                            {{ $feat->short_description }}
 
                         </div>
                         <div class="modal-footer">
