@@ -24,5 +24,13 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        view()->composer(array('user.layout.default','user.layout.header','user.contact'), function ($view) {
+            $theme = \Cookie::get('theme');
+            if ($theme != 'dark' && $theme != 'light') {
+                $theme = 'light';
+            }
+        
+            $view->with('theme', $theme);
+        });
     }
 }
