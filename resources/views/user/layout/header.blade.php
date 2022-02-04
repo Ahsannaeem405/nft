@@ -16,7 +16,7 @@
             </li>
             <li class="nav-item mx-2">
 
-                <a class="nav-link " href="{{url('newsletter')}}">News letter</a>
+                <a class="nav-link " href="{{url('newsletter')}}">Newsletter</a>
             </li>
             <li class="nav-item mx-2">
                 <a class="nav-link" href="{{url('/contact')}}">Contact us</a>

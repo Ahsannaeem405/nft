@@ -23,7 +23,7 @@
                 <div class="headerblock" style="background-image: url('{{asset('img/Sentiment.jpg')}}')">
                     <div class="row d-flex align-items-center">
                         <div class="col-md-5 col-lg-6 col-12">
-                            <div class="headerblock-left my-3">
+                            <div class="headerblock-left my-3 rounded">
                                 <h1>Buy and sell crypto</h1>
                                 <h3>The best all-in-one NFT analytics platform</h3>
                                 <p>Buy and sell digital currencies using over 350 different payment methods. Get your
@@ -268,7 +268,7 @@
     <!--Home page silder end-->
     <!--top collection start-->
     <div class="container my-5">
-        <div class="row">
+        <div class="row rounded">
             <div class="col-12">
                 <div class="top-collection">
                     <div class="block-header d-flex justify-content-between align-items-center">

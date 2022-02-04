@@ -47,15 +47,18 @@
         }
         .dark-theme {
             color: white;
-            background-color: black;
+            background-color: #272727;
         } 
         .dark-theme div ul li a {
             color: white !important;
         }
         .dark-theme div  {
             color: white;
-            background-color: black;
+            background-color: #343434; */
         }
+        
+        
+
         
         
 
@@ -167,8 +170,7 @@ var dark_theme_class = 'dark-theme';
 
 toggle_icon.addEventListener('click', function() {
     
-    if (body.classList.contains(dark_theme_class) && 
-    nav.classList.contains(dark_theme_class)  ) {
+    if (body.classList.contains(dark_theme_class) && nav.classList.contains(dark_theme_class)) {
         
         
 
