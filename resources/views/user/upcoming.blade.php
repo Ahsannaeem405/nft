@@ -272,7 +272,7 @@
                             </div>
 
 
-                            <input type="submit" class="btn btn-primary" required value="Submit" onclick={closeForm()}>
+                            <input type="submit" class="btn btn-primary"  value="Submit" onclick={closeForm()}>
                         </form>
                     </div>
                 </div>
