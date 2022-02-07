@@ -10,7 +10,6 @@
             <div class="col-12">
                 <div class="upcoming-pageheading mt-5 text-center mx-1 px-1 mx-md-5 px-md-5">
                     <h2 class="mb-3">Upcoming NFT Sales</h2>
-
                     <p class=" px-0 px-lg-5">Disclaimer: Any information provided on this page including the featured
                         project(s) should not be
                         considered as financial or investment advice. The information is provided as-is with no
@@ -109,7 +108,6 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
                     <div class="add-project-form my-3 px-2 px-sm-4 py-4" >
-
 
                         <h2 class="mb-3 mb-lg-4">Upcoming NFT Sales Form</h2>
                         <form action="{{url('upcoming/save')}}" method="POST" style="text-align: start;">
