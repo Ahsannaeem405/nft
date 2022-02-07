@@ -6,8 +6,8 @@
     <!--Nav Bar end-->
     <!--Newsletter page Start-->
     <div class="newletter">
-        <div class="container-fluid">
-            <div class="row d-flex justify-content-center">
+        <div class="container-fluid my-5 {{ $theme . '-theme' }}">
+            <div class="row d-flex justify-content-center s1">
                 <div class="col-12 col-md-10 col-lg-8 py-5 px-0">
                     <div class="newsletter-from text-center">
                         @if(session()->has('success'))

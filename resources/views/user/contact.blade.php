@@ -5,9 +5,9 @@
 @include('user.layout.header')
     <!--Nav Bar end-->
     <!--contact us start-->
-    <div class="container-fluid">
-        <div class="row mt-5 px-sm-5 px-1 d-flex justify-content-center">
-            <div class="col-md-10 col-lg-7 py-4 px-1 px-xl-5">
+    <div class="container-fluid my-5 {{ $theme . '-theme' }}">
+        <div class="row mt-5 px-sm-5 s1 px-1 d-flex justify-content-center">
+            <div class="col-md-10 s2 col-lg-7 py-4 px-1 px-xl-5">
                 <div class="contact-help mx-2 mx-md-5 mb-4">
                     <div>
                         <h3>How Can We Help?</h3>

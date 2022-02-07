@@ -13,7 +13,7 @@
 
     <!--Home page start-->
 
-    <div class="container my-5">
+    <div class="container my-5 {{ $theme . '-theme' }}">
         <div class="row">
             <div class="col-12">
 
@@ -336,7 +336,7 @@
     </div>
     <!--top collection end-->
     <!--explore nft-->
-    <div class="container my-5">
+    <div class="container my-5" id="explorenft">
         <div class="row">
             <div class="col-12">
                 <div class="explore-nft">

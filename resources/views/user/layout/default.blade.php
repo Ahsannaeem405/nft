@@ -46,21 +46,110 @@
             background-color: white;
         }
         .dark-theme {
-            color: white;
+            color: white !important;
             background-color: #272727;
         } 
         .dark-theme div ul li a {
             color: white !important;
         }
+        .dark-theme .navbar-collapse{
+            background-color: #272727; */
+
+        }
         .dark-theme div  {
-            color: white;
+            color: white  !important;
             background-color: #343434; */
         }
-        
-        
+        .dark-theme .row .col-12  {
+            color: white  !important;
+            background-color: #272727; */
+        }
 
+        .dark-theme .row .col-12 .home-slider .row {
+            color: white  !important;
+            background-color: #272727; */
+        }
+        .dark-theme .row .col-12 .home-slider .row .col-10 {
+            color: white  !important;
+            background-color: transparent; */
+        }
+
+        .dark-theme .row .col-12 div .block-body .row .col-xl-3 .feature-card div p{
+            color: white  !important;
+        }
+        .dark-theme .row .col-12 .explore-nft div  .row div a .explore-card .explore-card-body h5{
+            color: white  !important;
+        }
+        .dark-theme .row .col-12 .explore-nft div  .row div a .explore-card .explore-card-body div span{
+            color: white  !important;
+        }
+        .dark-theme .row .col-12 .upcoming-pageheading  {
+            color: white  !important;
+            background-color: #272727 ; */
+        }
+        .dark-theme .row .col-12 .upcoming-card {
+            color: white  !important;
+            background-color: green !important; */
+        }
+        .dark-theme .row  {
+            color: white  !important;
+            background-color: none; */
+        }
+        .dark-theme .row div .row div .footer-links div a{
+            color: white  !important;
+        }
+        .dark-theme .row .col-12 .headerblock .row {
+            color: white  !important;
+            background-color: transparent !important; */
+        }
+        .dark-theme .row .col-12 .headerblock .row .col-lg-6 .headerblock-left {
+            color: white  !important;
+            background-color: transparent !important; */
+        }
+        .dark-theme .row .col-12 .headerblock .row .col-lg-6 {
+            color: white  !important;
+            background-color: transparent !important; */
+        }
+        .dark-theme .row .col-12 .headerblock .row .col-lg-6 .headerblock-right .owl-theme  .owl-stage-outer .owl-stage .active .item .header-card .header-card-body ul li {
+            background-color: #343434 !important; */
+        }
         
-        
+        /* .dark-theme .row .col-12 .headerblock .row .col-lg-6 .headerblock-right .owl-theme  .owl-stage-outer .owl-stage .active{
+            padding-left: 1px !important; */
+        } */
+        nav button {
+            background-color: green !important; */
+            color: green !important;
+            border: 2px solid red;
+        }
+        .dark-theme .s1 {
+            background-color: #272727 !important; */
+            color: white  !important;
+
+        }
+        .dark-theme .s1 .s2{
+            background-color: #272727 !important; */
+            color: white  !important;
+
+        }
+        .dark-theme h4{
+            color: white  !important;
+
+        }
+
+        .dark-theme h4 span{
+            color: white  !important;
+
+        }
+        .dark-theme .explore-nftbody .row .col-12{
+            color: white  !important;
+        }
+        .dark-theme .explore-nftbody .row .col-12 a div div h5{
+            color: white  !important;
+        }
+        .dark-theme .explore-nftbody .row .col-12 a div div div span{
+            color: white  !important;
+        }
 
         /* body{         
         text-align:center; 
@@ -156,19 +245,39 @@
         }
     })
 </script>
+<!-- <script>
+    var toggled = false;
+    var circle = $("#circle");
+    $("#toggle").click(function () {
+    // $("h1, p, div").toggleClass("color-white");
+    // $("body, div, li, nav").toggleClass("bck-color-black");
+    if (!toggled) {
+        circle.css("margin-left", "100px");
+        toggled = true;
+    } else {
+        circle.css("margin-left", "1px");
+        toggled = false;
+    }
+    });
+</script> -->
 <script> 
-var toggle_icon = document.getElementById('theme-toggle');
+var toggled = false;
 
+var toggle = document.getElementById('toggle');
+
+var circle = document.getElementById('circle');
 var body = document.getElementsByTagName('body')[0];
 var nav = document.getElementsByTagName('nav')[0];
-var fot = document.getElementsByClassName('row')[0];
+// var fot = document.getElementsByClassName('row')[0];
+var back = document.getElementsByClassName('my-5')[0];
+var fot = document.getElementsByClassName('footer')[0];
 
 
 var sun_class = 'icon-sun';
 var moon_class = 'icon-moon';
 var dark_theme_class = 'dark-theme';
 
-toggle_icon.addEventListener('click', function() {
+toggle.addEventListener('click', function() {
     
     if (body.classList.contains(dark_theme_class) && nav.classList.contains(dark_theme_class)) {
         
@@ -176,7 +285,12 @@ toggle_icon.addEventListener('click', function() {
 
         body.classList.remove(dark_theme_class);
         nav.classList.remove(dark_theme_class);
-        toggle_icon.innerHTML = "dark theme";
+        back.classList.remove(dark_theme_class);
+        fot.classList.remove(dark_theme_class);
+        // toggle_icon.innerHTML = "dark theme";
+        circle.classList.remove("ml-4");
+
+        toggled = false;
 
         setCookie('theme', 'light');
     }
@@ -185,7 +299,12 @@ toggle_icon.addEventListener('click', function() {
         
         body.classList.add(dark_theme_class);
         nav.classList.add(dark_theme_class);
-        toggle_icon.innerHTML = "light theme";
+        back.classList.add(dark_theme_class);
+        fot.classList.add(dark_theme_class);
+        // toggle_icon.innerHTML = "light theme";
+        circle.classList.add("ml-4");
+
+        toggled = true;
 
         setCookie('theme', 'dark');
     }
@@ -233,6 +352,13 @@ function setCookie(name, value) {
 
        
 </script>  
+
+
+
+</body>
+
+</html>
+
 <!-- // $( ".change" ).on("click", function() { 
         //     if( $( "body" ).hasClass( "dark" )) { 
         //         $( "body" ).removeClass( "dark" ); 
@@ -242,24 +368,4 @@ function setCookie(name, value) {
         //         $( ".change" ).text( "ON" ); 
         //     } 
         // });  -->
-
-<!-- <script>
-    var toggled = false;
-    var circle = $("#circle");
-    $("#toggle").click(function () {
-    $("h1, p, div").toggleClass("color-white");
-    $("body, div, li, nav").toggleClass("bck-color-black");
-    if (!toggled) {
-        circle.css("margin-left", "100px");
-        toggled = true;
-    } else {
-        circle.css("margin-left", "1px");
-        toggled = false;
-    }
-    });
-</script> -->
-
-</body>
-
-</html>
-
+<!-- this is comments for remember -->

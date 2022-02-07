@@ -30,16 +30,17 @@
             </li> --}}
         </ul>
         
- <button class="btn btn-primary" id="theme-toggle">dark theme</button> 
-                
-        <!-- <div id="toggle">
-            <div id="circle"></div>-->
-        </div> 
+ <!-- <button class="btn btn-primary" id="theme-toggle">dark theme</button>  -->
+    
         <!-- <div id="theme-toggle">
             <input type="checkbox" class="custom-control-input icon-{{ $theme == 'dark' ? 'sun' : 'moon' }}" >
             <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
         </div> -->
     </div >
+    <span><h3> dark mode </h3></span>      
+        <div id="toggle">
+            <div id="circle"></div>
+        </div> 
     
 
     <!-- <div class="mode"> 

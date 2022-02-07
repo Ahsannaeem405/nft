@@ -42,12 +42,12 @@ height: 64px !important;
 
     </style>
      {{-- @dd($data1->primary_asset_contracts[0]->symbol) --}}
-    <div class="container my-5">
+    <div class="container my-5 {{ $theme . '-theme' }}">
         <div class="row">
             <div class="col-12" style="    padding: unset;">
-                <div class="" style="border-radius: 20px;padding: 20px;background-color: white;">
+                <div class="" style="border-radius: 20px;padding: 20px;">
 
-                    <div class="block-body {{ $theme . '-theme' }}">
+                    <div class="block-body">
                         <div class="row mb-3">
                             <div class="col-xl-7 col-lg-7 col-12 p-0">
                                 <div class="mt-4 mx-2" style="    padding: 10px;">
@@ -138,7 +138,7 @@ height: 64px !important;
                                                     </div>
                                                     <div class="col-12" style="    margin-top: -11px;">
                                                         <span
-                                                            style="    border-radius: 6px;font-size: 14px;padding: 3px 10px; color: #269958;   background: #f9f9f9;">{{$data1->primary_asset_contracts[0]->symbol}}
+                                                            style="    border-radius: 6px;font-size: 14px;padding: 3px 10px; color: #269958;  ">{{$data1->primary_asset_contracts[0]->symbol}}
                                                         </span>
                                                     </div>
                                                 </div>
@@ -205,7 +205,7 @@ height: 64px !important;
                                         <div class="col-lg-6 col-md-6 col-12"
                                             style="padding-left:unset;    margin-bottom: 10px;">
 
-                                            <div style="  padding: 15px; background: #f9f9f9;border-radius: 12px;">
+                                            <div style="  padding: 15px; border-radius: 12px;">
                                                 <div class="row">
                                                     <div class="col-8">
                                                         <p
@@ -246,7 +246,7 @@ height: 64px !important;
                                         <div class="col-lg-6 col-md-6 col-12"
                                             style="padding-left:unset;    margin-bottom: 10px;">
 
-                                            <div style="  padding: 15px; background: #f9f9f9;border-radius: 12px;">
+                                            <div style="  padding: 15px; border-radius: 12px;">
                                                 <div class="row">
                                                     <div class="col-8">
                                                         <p
@@ -296,7 +296,7 @@ height: 64px !important;
                                         <div class="col-lg-6 col-md-6 col-12"
                                             style="    margin-bottom: 10px;padding-left:unset;">
 
-                                            <div style="  padding: 15px; background: #f9f9f9;border-radius: 12px;">
+                                            <div style="  padding: 15px;border-radius: 12px;">
                                                 <div class="row">
                                                     <div class="col-8">
                                                         <p
@@ -338,7 +338,7 @@ height: 64px !important;
                                         <div class="col-lg-6 col-md-6 col-12"
                                             style="margin-bottom: 10px;padding-left:unset;">
 
-                                            <div style="  padding: 15px; background: #f9f9f9;border-radius: 12px;">
+                                            <div style="  padding: 15px; border-radius: 12px;">
                                                 <div class="row">
                                                     <div class="col-8">
                                                         <p
@@ -449,7 +449,7 @@ height: 64px !important;
         <div class="row">
             <div class="col-12" style="    margin-top: 60px;">
                 {{-- <div id="chartContainer" style="height: 370px; width: 100%;"></div> --}}
-                <div class="">
+                <div class="my-5 {{ $theme . '-theme' }}">
                     <div class="explore-nft-header">
                         <h2>You Might Be Interested At</h2>
 
@@ -461,7 +461,7 @@ height: 64px !important;
                                     <a href="{{ url('/overview', [$datass->slug]) }}" style="text-decoration: none;">
 
                                         <div class=" mt-3 mx-3" style="    border-radius: 15px;
-                                            border: 1px solid rgba(0, 0, 0, 0.1);background: white;">
+                                            border: 1px solid rgba(0, 0, 0, 0.1);">
                                             <div class="explore-card-img"
                                                 style="    border-radius: 15px;border: 1px solid rgba(0, 0, 0, 0.1);">
                                                 <img style="    max-height: 190px;min-width: 250px;max-width: 250px;min-height: 190px;"
@@ -507,7 +507,7 @@ height: 64px !important;
     <!--home page end-->
 
     <!--footer blcok start-->
-    <div class="container-fluid footer">
+    <div class="container-fluid footer {{ $theme . '-theme' }}">
         <div class="row p-1 p-sm-5 p-lg-2 p-xl-5">
             <div class="col-lg-4 col-md-6 col-sm-12 py-3 py-md-5 d-flex align-items-center justify-content-center">
                 <a href="{{ asset('/') }}" class="footer-logo ">

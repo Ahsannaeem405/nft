@@ -4,20 +4,19 @@
 
 #toggle {
     background-color: white;
-    width: 140px;
-    height: 40px;
+    width: 74px;
+    height: 38px;
     border-radius: 20px;
-    border: 2px solid black;
-    margin: 50px auto;
+    border: 6px solid black;
     cursor: pointer;
 }
 
 #circle {
-    width: 38px;
-    height: 38px;
+    width: 34px;
+    height: 28px;
     background-color: black;
     border-radius: 50%;
-    margin-top: 1px;
+    margin-top: 0px;
     margin-left: 1px;
 }
 

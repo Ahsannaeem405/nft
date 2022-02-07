@@ -24,7 +24,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        view()->composer(array('user.layout.default','user.layout.header','user.contact', 'user.index','user.detail'), function ($view) {
+        view()->composer(array('user.layout.default','user.layout.header','user.contact', 'user.index','user.detail','user.newsletter','user.upcoming'), function ($view) {
             $theme = \Cookie::get('theme');
             if ($theme != 'dark' && $theme != 'light') {
                 $theme = 'light';

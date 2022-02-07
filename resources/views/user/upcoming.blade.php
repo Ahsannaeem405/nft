@@ -37,8 +37,8 @@
         </div>
     </div>
 
-
-    <div class="container-fluid">
+<div class="my-5 {{ $theme . '-theme' }}">
+    <div class="container-fluid s1">
         <div class="row mx-5 mt-3">
             <div class="col-12">
                 @if(session()->has('success'))
@@ -49,7 +49,7 @@
                 <button class="float-right new-project-btn" onclick=openForm()>Add Your Project</button>
             </div>
         </div>
-        <div class="row my-3 mx-xl-3 mx-lg-1 mx-1 d-flex justify-content-center">
+        <div class="row my-3 mx-xl-3 s1 mx-lg-1 mx-1 d-flex justify-content-center">
 
             @foreach ($view as  $views)
 
@@ -74,7 +74,7 @@
 
                         <div class="d-flex w-100 justify-content-between align-items-center">
                             <div class="card-time-details w-50">
-                                <div class="persale-details">
+                                <div class="persale-details  {{ $theme . '-theme' }}">
                                     <h4>{{$views->blockchain}}:<span class="px-2">{{$views->date}}</span></h4>
                                     <p>{{ $views->time}} </p>
                                 </div>
@@ -95,6 +95,7 @@
             @endforeach
         </div>
     </div>
+</div>
 
     <!--Upcoming page end-->
 
