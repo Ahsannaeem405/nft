@@ -117,31 +117,31 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Your Project's Name </label>
                                 <input type="text" name="name" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter your project name">
+                                    aria-describedby="emailHelp" placeholder="Enter your project name" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Your Email </label>
                                 <input type="email" class="form-control" name="email" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="You Email Address">
+                                    aria-describedby="emailHelp" placeholder="You Email Address" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Website URL (if not available, please provide an est.
                                     target date if possible)
                                 </label>
                                 <input type="text" name="url" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter Website URL">
+                                    aria-describedby="emailHelp" placeholder="Enter Website URL" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Your Project's Official Discord Invite Link. MAKE SURE
                                     THE INVITE LINK WILL NOT EXPIRE!
                                 </label>
                                 <input type="text" name="official_url" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter Official Discord Invite Link">
+                                    aria-describedby="emailHelp" placeholder="Enter Official Discord Invite Link" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Your Project's Official Twitter</label>
                                 <input type="text" name="official_twitter" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter Official Twitter">
+                                    aria-describedby="emailHelp" placeholder="Enter Official Twitter" required>
                                 <small id="emailHelp" class="form-text text-muted">Enter as
                                     https://twitter.com/yourtwitterhandle, if you don't have an official twitter for the
                                     project provide your personal twitter
@@ -150,7 +150,7 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">OpenSea Link (if available)</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" name="openSea_link" placeholder="OpenSea Link">
+                                    aria-describedby="emailHelp" name="openSea_link" placeholder="OpenSea Link" required>
                                 <small id="emailHelp" class="form-text text-muted">Enter as
                                     https://opensea.io/collection/yourcollectionname
                                 </small>
@@ -159,7 +159,7 @@
                                 <label for="exampleInputEmail1">What is the maximum number of items in your collection?
                                 </label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" name="maximum_number" placeholder="Enter Maximum Number ">
+                                    aria-describedby="emailHelp" name="maximum_number" placeholder="Enter Maximum Number" required>
                                 <small id="emailHelp" class="form-text text-muted">Or at least the first batch that you
                                     would like to be mentioned.
                                 </small>
@@ -168,17 +168,17 @@
                                 <label for="exampleInputEmail1">Unit Price (ETH)
                                 </label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" name="unit_price" placeholder="Enter Unit Price">
+                                    aria-describedby="emailHelp" name="unit_price" placeholder="Enter Unit Price" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Your Project's Sale Start Date (in UTC only*)
                                 </label>
                                 <div class="row">
                                     <div class="col-md-3 col-6">
-                                        <input type="date" class="form-control" name="date"  placeholder="Date">
+                                        <input type="date" class="form-control" name="date"  placeholder="Date" required>
                                     </div>
                                     <div class="col-md-3 col-6">
-                                        <input type="time" class="form-control" name="time" placeholder="Time">
+                                        <input type="time" class="form-control" name="time" placeholder="Time" required>
                                     </div>
                                 </div>
                             </div>
@@ -187,27 +187,27 @@
                                     would like to show on the page
                                 </label>
                                 <input type="text" class="form-control" name="short_description" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter Short Description">
+                                    aria-describedby="emailHelp" placeholder="Enter Short Description" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Tell us about your project
                                 </label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" name="tell_us" placeholder="Tell us about your project">
+                                    aria-describedby="emailHelp" name="tell_us" placeholder="Tell us about your project" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">What makes your project differences/ stand out from
                                     others?
                                 </label>
                                 <input type="text" class="form-control" name="project_differences" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter Project Differences">
+                                    aria-describedby="emailHelp" placeholder="Enter Project Differences" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Project's Roadmap and/ or Current Activities (If
                                     available)
                                 </label>
                                 <input type="text" class="form-control" name="projects_roadmap" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter Project's Roadmap">
+                                    aria-describedby="emailHelp" placeholder="Enter Project's Roadmap" required>
                             </div>
 
                             <div class="form-group">
@@ -217,19 +217,19 @@
                                     NOT CHANGE IMAGES LATER.
                                 </label>
                                 <input type="text" class="form-control" name="links_images" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" >
+                                    aria-describedby="emailHelp" required >
                             </div>
                             <div class="form-group">
                                 What is your collection's blockchain?
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="blockchain" id="Ethereum" value="Ethereum" checked>
-                                    <label class="form-check-label" for="Ethereum">
+                                    <label class="form-check-label" for="Ethereum" >
                                         Ethereum
                                     </label>
                                   </div>
                                   <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="blockchain" id="Matic" value="Matic">
-                                    <label class="form-check-label" for="Matic">
+                                    <input class="form-check-input" type="radio" name="blockchain" id="Matic" value="Matic" >
+                                    <label class="form-check-label" for="Matic" >
                                         Matic
                                     </label>
                                   </div>
@@ -262,13 +262,13 @@
                                 <label for="exampleInputEmail1">What is your minting contract address (if you know it)?
                                 </label>
                                 <input type="text" class="form-control" id=" minting"
-                                    aria-describedby="emailHelp" placeholder="Enter Minting Contract Address">
+                                    aria-describedby="emailHelp" placeholder="Enter Minting Contract Address" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Is your project a derivative of an existing project? If so, which project?
                                 </label>
                                 <input type="text" class="form-control" name="derivative" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="">
+                                    aria-describedby="emailHelp" placeholder="" required>
                             </div>
 
 
@@ -352,7 +352,7 @@
                                 <div>
                                     <h4 class="pb-2"> Supports</h4>
                                     <a href="#">
-                                        FQA
+                                        FAQ
                                     </a>
                                     <br/>
                                     <br/>
