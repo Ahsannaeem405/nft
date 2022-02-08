@@ -52,19 +52,18 @@
         .dark-theme div ul li a {
             color: white !important;
         }
+        .dark-theme .navbar{
+            box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.5);
+        }
         .dark-theme .navbar-collapse{
             background-color: #272727; */
-
         }
-        .dark-theme div  {
+        .dark-theme .navbar-collapse ul  {
             color: white  !important;
-            background-color: #343434; */
         }
-        .dark-theme .row .col-12  {
-            color: white  !important;
-            background-color: #272727; */
+        .dark-theme .navbar-collapse .active{
+            border-bottom: 2px solid white;
         }
-
         .dark-theme .row .col-12 .home-slider .row {
             color: white  !important;
             background-color: #272727; */
@@ -74,8 +73,17 @@
             background-color: transparent; */
         }
 
-        .dark-theme .row .col-12 div .block-body .row .col-xl-3 .feature-card div p{
-            color: white  !important;
+        .dark-theme .block-body .feature-card{
+            border: 1px solid rgba(255, 255, 255, 0.1)
+        }
+        .dark-theme .block-body .feature-card .card-bio{
+            color: white;
+        }
+        .dark-theme .feature-card .card-head p{
+            color:white;
+        }
+        .dark-theme .feature-card .card-body .card-values{
+            color: #fff;
         }
         .dark-theme .row .col-12 .explore-nft div  .row div a .explore-card .explore-card-body h5{
             color: white  !important;
@@ -83,42 +91,71 @@
         .dark-theme .row .col-12 .explore-nft div  .row div a .explore-card .explore-card-body div span{
             color: white  !important;
         }
-        .dark-theme .row .col-12 .upcoming-pageheading  {
+        .dark-theme .upcoming-pageheading  {
             color: white  !important;
-            background-color: #272727 ; */
+            background-color: #272727 ;
         }
-        .dark-theme .row .col-12 .upcoming-card {
+        .dark-theme .upcoming-card {
             color: white  !important;
-            background-color: green !important; */
+            background-color: #343434 !important;
+            box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5)
         }
-        .dark-theme .row  {
-            color: white  !important;
-            background-color: none; */
+        .dark-theme .explore-nft-header{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         .dark-theme .row div .row div .footer-links div a{
             color: white  !important;
         }
-        .dark-theme .row .col-12 .headerblock .row {
-            color: white  !important;
-            background-color: transparent !important; */
+        .dark-theme .headerblock{
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
         }
-        .dark-theme .row .col-12 .headerblock .row .col-lg-6 .headerblock-left {
+        .dark-theme .headerblock .headerblock-left {
             color: white  !important;
             background-color: transparent !important; */
         }
         .dark-theme .row .col-12 .headerblock .row .col-lg-6 {
             color: white  !important;
-            background-color: transparent !important; */
+            background-color: transparent !important; 
         }
-        .dark-theme .row .col-12 .headerblock .row .col-lg-6 .headerblock-right .owl-theme  .owl-stage-outer .owl-stage .active .item .header-card .header-card-body ul li {
-            background-color: #343434 !important; */
+        .dark-theme .headerblock .headerblock-right .owl-theme .owl-item .header-card {
+            background-color: #343434 !important;
+            box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5) !important;
         }
-        
-        /* .dark-theme .row .col-12 .headerblock .row .col-lg-6 .headerblock-right .owl-theme  .owl-stage-outer .owl-stage .active{
-            padding-left: 1px !important; */
-        } */
+        .dark-theme .headerblock .headerblock-right .owl-theme .owl-item .header-card .header-card-head{
+            border-bottom: 1px solid rgba(255,255,255, 0.5) !important;
+        }
+        .dark-theme .headerblock .headerblock-right .owl-theme .owl-item .header-card .header-card-head button{
+            background-color: #343434;
+            color: white;
+        }
+        .dark-theme .headerblock .headerblock-right .owl-theme .owl-item .header-card .header-card-head button{
+            color: white:
+        }
+        .dark-theme .headerblock .headerblock-right .owl-theme .owl-item .header-card .header-card-body .list-group .table-heading{
+            background-color: #343434;
+            color: white;
+        }
+
+        .dark-theme .headerblock .headerblock-right .owl-theme .owl-item .header-card .header-card-body .list-group .list-group-item{
+            background-color: #343434;
+            color: white !important;
+        }
+        .dark-theme .headerblock .headerblock-right .owl-theme .owl-item .header-card .header-card-body .list-group .list-group-item:first-child{
+            border-radius: 0px !important;
+        }
+       
+        .dark-theme .top-collection-main .top-collection{
+            background-color: #343434 ;
+            box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+        }
+        .dark-theme .top-collection-main .top-collection .block-header h3{
+            color: white;
+        }
+        .dark-theme .top-collection-main .top-collection .block-header{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
         nav button {
-            background-color: green !important; */
+            background-color: green !important;
             color: green !important;
             border: 2px solid red;
         }
@@ -134,21 +171,33 @@
         }
         .dark-theme h4{
             color: white  !important;
-
         }
 
         .dark-theme h4 span{
             color: white  !important;
-
         }
-        .dark-theme .explore-nftbody .row .col-12{
-            color: white  !important;
+        .dark-theme .explore-nft {
+            background-color: #343434;
+        }
+        .dark-theme .footer-logo img{
+            box-shadow: 0px 0px 8px rgba(255,255,255,0.2);
+        }
+        .dark-theme .explore-nft-header h2{
+            color:white;
         }
         .dark-theme .explore-nftbody .row .col-12 a div div h5{
             color: white  !important;
         }
         .dark-theme .explore-nftbody .row .col-12 a div div div span{
             color: white  !important;
+        }
+        .dark-theme .quiry-questions .card{
+                background-color: #343434;
+                border: 1px solid rgba(255,255,255,.125);
+        }
+        .dark-theme .contact-form{
+            background-color: #343434;
+            box-shadow:0px 0px 8px rgba(255,255,255,0.5)
         }
 
         /* body{         
@@ -181,8 +230,6 @@
 <body class="{{ $theme . '-theme' }}" >
 
 @yield('content')
-
-
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -263,13 +310,13 @@
 <script> 
 var toggled = false;
 
-var toggle = document.getElementById('toggle');
+var toggle = document.getElementById('theme-check');
 
 var circle = document.getElementById('circle');
 var body = document.getElementsByTagName('body')[0];
 var nav = document.getElementsByTagName('nav')[0];
 // var fot = document.getElementsByClassName('row')[0];
-var back = document.getElementsByClassName('my-5')[0];
+var back = document.getElementsByClassName('top-collection-main')[0];
 var fot = document.getElementsByClassName('footer')[0];
 
 
@@ -277,71 +324,27 @@ var sun_class = 'icon-sun';
 var moon_class = 'icon-moon';
 var dark_theme_class = 'dark-theme';
 
-toggle.addEventListener('click', function() {
-    
-    if (body.classList.contains(dark_theme_class) && nav.classList.contains(dark_theme_class)) {
-        
-        
-
-        body.classList.remove(dark_theme_class);
-        nav.classList.remove(dark_theme_class);
-        back.classList.remove(dark_theme_class);
-        fot.classList.remove(dark_theme_class);
-        // toggle_icon.innerHTML = "dark theme";
-        circle.classList.remove("ml-4");
-
-        toggled = false;
-
-        setCookie('theme', 'light');
-    }
-    else {
-        
-        
+function chnageTheme(obj){
+    if(document.getElementById('theme-check').checked){
         body.classList.add(dark_theme_class);
         nav.classList.add(dark_theme_class);
-        back.classList.add(dark_theme_class);
-        fot.classList.add(dark_theme_class);
+       // back.classList.add(dark_theme_class);
+      //  fot.classList.add(dark_theme_class);
         // toggle_icon.innerHTML = "light theme";
-        circle.classList.add("ml-4");
-
-        toggled = true;
-
         setCookie('theme', 'dark');
+        
     }
-    // if (nav.classList.contains(dark_theme_class)) {
-    //     toggle_icon.classList.add(moon_class);
-    //     toggle_icon.classList.remove(sun_class);
+    else{
+        body.classList.remove(dark_theme_class);
+        nav.classList.remove(dark_theme_class);
+      //  back.classList.remove(dark_theme_class);
+        //fot.classList.remove(dark_theme_class);
+        // toggle_icon.innerHTML = "dark theme";
+       
+        setCookie('theme', 'light');
+    }
+}
 
-    //     nav.classList.remove(dark_theme_class);
-
-    //     setCookie('theme', 'light');
-    // }
-    // else {
-    //     toggle_icon.classList.add(sun_class);
-    //     toggle_icon.classList.remove(moon_class);
-
-    //     nav.classList.add(dark_theme_class);
-
-    //     setCookie('theme', 'dark');
-    // }
-
-    // if (fot.classList.contains(dark_theme_class)) {
-    //     toggle_icon.classList.add(moon_class);
-    //     toggle_icon.classList.remove(sun_class);
-
-    //     fot.classList.remove(dark_theme_class);
-
-    //     setCookie('theme', 'light');
-    // }
-    // else {
-    //     toggle_icon.classList.add(sun_class);
-    //     toggle_icon.classList.remove(moon_class);
-
-    //     fot.classList.add(dark_theme_class);
-
-    //     setCookie('theme', 'dark');
-    // }
-});
 
 function setCookie(name, value) {
     var d = new Date();

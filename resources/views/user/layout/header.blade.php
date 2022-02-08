@@ -37,9 +37,14 @@
             <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
         </div> -->
     </div >
-    <span><h3> dark mode </h3></span>      
+    <!-- <span><h3> dark mode </h3></span>       -->
         <div id="toggle">
-            <div id="circle"></div>
+            <div id="circle">
+                <label class="switch">
+                    <input @if($theme=='dark')? checked @endif type="checkbox" id="theme-check"  onchange="chnageTheme(this)">
+                    <span class="slider round"></span>
+                </label>
+            </div>
         </div> 
     
 

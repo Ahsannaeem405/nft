@@ -13,12 +13,9 @@
 
     <!--Home page start-->
 
-    <div class="container my-5 {{ $theme . '-theme' }}">
+    <div class="container my-5">
         <div class="row">
             <div class="col-12">
-
-
-
                 <!--Header block start-->
                 <div class="headerblock" style="background-image: url('{{asset('img/Sentiment.jpg')}}')">
                     <div class="row d-flex align-items-center">
@@ -202,23 +199,23 @@
                                                     $i = 1;
                                                     ?>
 
-@foreach ($data as $datas )
-<a href="{{url('/overview',[$datas->slug])}}" style="text-decoration: none;">
-<li style="color: black"
-    class="list-group-item d-flex justify-content-between align-items-center border-top">
-    <div class="d-flex justify-content-center align-items-center">
-        <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
-        <img src="@if(isset($datas->featured_image_url)) {{ $datas->featured_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
-            width="20" height="20" />
-            <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
-    </div>
-    <div class="value-size">
-        ${{ number_format((float)$datas->stats->market_cap, 4, '.', '') }}
-        <div class="text-success text-right">{{  number_format((float)$datas->stats->average_price, 4, '.', '') }}</div>
-    </div>
-</li>
-</a>
-@endforeach
+                                                        @foreach ($data as $datas )
+                                                        <a href="{{url('/overview',[$datas->slug])}}" style="text-decoration: none;">
+                                                        <li style="color: black"
+                                                            class="list-group-item d-flex justify-content-between align-items-center border-top">
+                                                            <div class="d-flex justify-content-center align-items-center">
+                                                                <span class="mr-2 font-weight-bold font-italic">{{$i++}}</span>
+                                                                <img src="@if(isset($datas->featured_image_url)) {{ $datas->featured_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg @endif"  style="    max-width: 20px;"
+                                                                    width="20" height="20" />
+                                                                    <span style="max-width:160px;font-size: 14px;line-height: 22px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">  {{ $datas->name}}</span>
+                                                            </div>
+                                                            <div class="value-size">
+                                                                ${{ number_format((float)$datas->stats->market_cap, 4, '.', '') }}
+                                                                <div class="text-success text-right">{{  number_format((float)$datas->stats->average_price, 4, '.', '') }}</div>
+                                                            </div>
+                                                        </li>
+                                                        </a>
+                                                        @endforeach
                                                 </ul>
                                             </div>
                                         </div>
@@ -266,8 +263,70 @@
         </div>
     </div>
     <!--Home page silder end-->
+    <div class="container">
+                    {{-- featured section --}}
+
+                <div class="row my-5">
+                    <div class="col-12">
+                        <div class="explore-nft">
+                            <div class="explore-nft-header">
+                                <h2>Featured NFTs</h2>
+
+                            </div>
+                            <div class="explore-nftbody">
+                                <div class="row">
+                                    @foreach ( $feat as $feats )
+
+                                    <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4  pt-4 px-3">
+                                        <div class="upcoming-card ">
+                                            <a href="{{url('/featured/overview',[$feats->id])}}" style="text-decoration: none;">
+
+                                            <div class="upcoming-card-img">
+                                                <img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEMfrw6hmh-H4Oz0kvXJH_7RezLdGdxVnycQ&usqp=CAU" />
+
+                                                <div class="card-user-info p-2">
+                                                    <div class="d-flex justify-content-between">
+                                                        <h3>{{ $feats->name}}</h3>
+
+                                                    </div>
+
+                                                    <p class="mt-1">{{ $feats->short_description}}</p>
+                                                </div>
+                                            </div>
+                                            <div class="upcoming-card-data p-2">
+
+                                                <div class="d-flex w-100 justify-content-between align-items-center">
+                                                    <div class="card-time-details w-50">
+                                                        <div class="persale-details">
+                                                            <h4>{{$feats->blockchain}}:<span class="px-2">{{$feats->date}}</span></h4>
+                                                            <p>{{ $feats->time}} </p>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="card-amount-details">
+                                                        <p>Unit Price: {{ $feats->unit_price}}</p>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    @endforeach
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- featured end section --}}
+        </div>
     <!--top collection start-->
-    <div class="container my-5">
+    <div class="container my-5 top-collection-main">
         <div class="row rounded">
             <div class="col-12">
                 <div class="top-collection">
@@ -389,166 +448,10 @@
             </div>
         </div>
 
-        {{-- featured section --}}
-
-        <div class="row my-5">
-            <div class="col-12">
-                <div class="explore-nft">
-                    <div class="explore-nft-header">
-                        <h2>Featured NFTs</h2>
-
-                    </div>
-                    <div class="explore-nftbody">
-                        <div class="row">
-                            @foreach ( $feat as $feats )
-
-                            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4  pt-4 px-3">
-                                <div class="upcoming-card ">
-                                    <a href="{{url('/featured/overview',[$feats->id])}}" style="text-decoration: none;">
-
-                                    <div class="upcoming-card-img">
-                                        <img
-                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEMfrw6hmh-H4Oz0kvXJH_7RezLdGdxVnycQ&usqp=CAU" />
-
-                                        <div class="card-user-info p-2">
-                                            <div class="d-flex justify-content-between">
-                                                <h3>{{ $feats->name}}</h3>
-
-                                            </div>
-
-                                            <p class="mt-1">{{ $feats->short_description}}</p>
-                                        </div>
-                                    </div>
-                                    <div class="upcoming-card-data p-2">
-
-                                        <div class="d-flex w-100 justify-content-between align-items-center">
-                                            <div class="card-time-details w-50">
-                                                <div class="persale-details">
-                                                    <h4>{{$feats->blockchain}}:<span class="px-2">{{$feats->date}}</span></h4>
-                                                    <p>{{ $feats->time}} </p>
-                                                </div>
-
-
-                                            </div>
-                                            <div class="card-amount-details">
-                                                <p>Unit Price: {{ $feats->unit_price}}</p>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-                            @endforeach
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{-- featured end section --}}
+        
     </div>
     <!--home page end-->
 
-    <!--footer blcok start-->
-    <div class="container-fluid footer">
-        <div class="row p-1 p-sm-5 p-lg-2 p-xl-5">
-            <div class="col-lg-4 col-md-6 col-sm-12 py-3 py-md-5 d-flex align-items-center justify-content-center">
-                <a href="{{asset('/')}}" class="footer-logo ">
-                    <img src="{{asset('/img/logo.png')}}" />
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 py-3 py-md-5 px-xl-5 px-1">
-                <div class="get-touch">
-                    <h3> Get In Touch</h3>
-                </div>
-                <div class="footer-icons my-3">
-                    <a href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-facebook-messenger"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="#">
-                    <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-                <div class="add-newletter mt-4">
-                    <p>Get the latest crypto news, updates, and reports by subscribing to our free newsletter.</p>
-                    <form>
-                        <input type="email" placeholder="Enter Your Email" class="form-control" />
-                        <input type="submit" class="footer-submit mt-3" />
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 py-3 py-md-5">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="footer-links px-4 px-lg-2 px-xl-4">
-                            <div>
-                                <h4 class="pb-2 "> Links</h4>
-                                <a href="#">
-                                    Home
-                                </a>
-                                <br/>
-                                <br/>
-                                <a href="#">
-                                    About Us
-                                </a>
-                                <br/>
-                                <br/>
-                                <a href="#">
-                                    contact Us
-                                </a>
-                                <br/>
-                                <br/>
-                                <a href="#">
-                                    Upcoming
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="footer-links px-4 px-lg-2 px-xl-4">
-                                <div>
-                                    <h4 class="pb-2"> Supports</h4>
-                                    <a href="#">
-                                        FQA
-                                    </a>
-                                    <br/>
-                                    <br/>
-                                    <a href="#">
-                                        Terms and Conditions
-                                    </a>
-                                    <br/>
-                                    <br/>
-                                    <a href="#">
-                                        Privacy Policy
-                                    </a>
-                                    <br/>
-                                    <br/>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- <div class="col-lg-4 col-md-6 col-sm-6 py-3 py-md-5">
-
-            </div> -->
-
-        </div>
-    </div>
-    <!--footer block end-->
+    <!--Footer Here-->
+    @include('user.layout.footer');
 @endsection

@@ -42,7 +42,6 @@ background-size: 100% 100%;
     border-radius: 25px;
     color: #53B9F3;
     border:0px;
-    transition: 0.8s;
     border: 1px solid #53B9F3;
 }
 .get-start:hover{
@@ -112,7 +111,7 @@ margin-top: 0px !important;
 .top-collection{
     border-radius: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: transparent;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
 }
 .block-header{
@@ -133,6 +132,7 @@ margin-top: 0px !important;
     font-size: 32px;
     font-weight: 600;
     font-family: 'PT Serif', serif;
+    color: black;
 }
 .top-collection .block-header button{
     border: 1px solid #53B9F3;
@@ -141,7 +141,6 @@ margin-top: 0px !important;
     color: white;
     background-color: #53B9F3;
     border-radius: 20px;
-    transition: 0.4s;
 }
 .top-collection .block-header button:hover{
     background-color: white;
@@ -226,6 +225,7 @@ margin-top: 0px !important;
     font-size: 34px;
     font-weight: 600;
     font-family: 'PT Serif', serif;
+    color: black;
 }
 .explore-nft-header button{
     border: 1px solid #53B9F3;
