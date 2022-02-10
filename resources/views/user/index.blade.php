@@ -230,7 +230,7 @@
     </div>
     <!--Header block end-->
     <!--Home page silder start-->
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-12">
 
