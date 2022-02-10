@@ -110,9 +110,9 @@
                 <div class="col-12 col-md-10 col-lg-8">
                 <div class="row"  >
                     <div class="col-12 text-end">
-                    <span class="close-popup float-right" onclick={closeForm()}>
-                    <img src="{{asset('img/close2.png')}}" alt="clode-img"/>
-                    </span>
+                    {{-- <span class="close-popup float-right" >
+                    <img src="{{asset('img/close2.png')}}"  onclick={closeForm()} alt="clode-img"/>
+                    </span> --}}
                     </div>
                         </div>
                     <div class="add-project-form my-3 px-2 px-sm-4 py-4" >
