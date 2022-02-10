@@ -103,11 +103,11 @@ return redirect('/admin')->with('success',  'Submitted Successfully');
 
 
     $feat = Upcoming::where('status', 1)->where('fetured_status', 1)->get();
-     $data=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=6');
+     $data=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=d12d83f7561e421eb2998fbdb8f64901&offset=0&limit=6');
         $data=json_decode($data->body());
 
 
-        $data1=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=12');
+        $data1=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=d12d83f7561e421eb2998fbdb8f64901&offset=0&limit=12');
         $data1=json_decode($data1->body());
 // dd($data);
 
@@ -307,7 +307,7 @@ return view('admin.edit');
     {
 
 
-        $data12=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=12');
+        $data12=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=d12d83f7561e421eb2998fbdb8f64901&offset=0&limit=12');
         $data12=json_decode($data12->body());
         $feat = Upcoming::find($id);
         return view('user.feture_detail', compact('feat', 'data12'));
@@ -328,7 +328,7 @@ return view('admin.edit');
         $data1 = $data->collection;
        $add = $data1->primary_asset_contracts[0]->address;
 
-        $data12=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=12');
+        $data12=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=d12d83f7561e421eb2998fbdb8f64901&offset=0&limit=12');
         $data12=json_decode($data12->body());
 
         $add2=Http::get('https://testnets-api.opensea.io/api/v1/bundles?limit=20&offset=0');
