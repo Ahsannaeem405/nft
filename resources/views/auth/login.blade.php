@@ -42,7 +42,7 @@
                                     </span>
                                 @enderror
                         </div>
-                        <div class="d-flex justify-content-between mx-1">
+                        <div class="d-flex justify-content-between align-items-center mx-1">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -57,7 +57,7 @@
                         </div>
 
 
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn w-75 mt-2 submit-btn">
                             {{ __('Login') }}
                         </button>
 

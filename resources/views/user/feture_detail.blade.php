@@ -45,7 +45,7 @@ height: 64px !important;
     <div class="container my-5">
         <div class="row">
             <div class="col-12" style="    padding: unset;">
-                <div class="" style="border-radius: 20px;padding: 20px;background-color: white;">
+                <div class="featured-details-card" style="border-radius: 20px;padding: 20px;background-color:transparent;">
 
                     <div class="block-body">
                         <div class="row mb-3">
@@ -365,8 +365,7 @@ height: 64px !important;
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
                                     <a href="{{ url('/overview', [$datass->slug]) }}" style="text-decoration: none;">
 
-                                        <div class=" mt-3 mx-3" style="    border-radius: 15px;
-                                        border: 1px solid rgba(0, 0, 0, 0.1);background: white;">
+                                        <div class=" mt-3 mx-3  explore-card" style="    border-radius: 15px;">
                                             <div class="explore-card-img"
                                                 style="    border-radius: 15px;border: 1px solid rgba(0, 0, 0, 0.1);">
                                                 <img style="    max-height: 190px;min-width: 250px;max-width: 250px;min-height: 190px;"

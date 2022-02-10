@@ -134,9 +134,20 @@ background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     text-align: center;
     background-color: white;
+    color: black;
 }
 @media screen and (max-width:400px){
     .add-project-form h2{
         font-size: 18px;
     }
+}
+.featured-details-card{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    color: black;
+    background-color: white;
+}
+.dark-theme .featured-details-card{
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    color: white;
+    background-color: #343434;
 }

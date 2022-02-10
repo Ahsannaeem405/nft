@@ -42,13 +42,13 @@ height: 64px !important;
 
     </style>
      {{-- @dd($data1->primary_asset_contracts[0]->symbol) --}}
-    <div class="container my-5 {{ $theme . '-theme' }}">
+    <div class="container my-5">
         <div class="row">
             <div class="col-12" style="    padding: unset;">
-                <div class="" style="border-radius: 20px;padding: 20px;">
-
+                <div class="featured-details-card" style="border-radius: 20px;padding: 20px;">
                     <div class="block-body">
                         <div class="row mb-3">
+                            
                             <div class="col-xl-7 col-lg-7 col-12 p-0">
                                 <div class="mt-4 mx-2" style="    padding: 10px;">
                                     <div class="row">
@@ -449,7 +449,7 @@ height: 64px !important;
         <div class="row">
             <div class="col-12" style="    margin-top: 60px;">
                 {{-- <div id="chartContainer" style="height: 370px; width: 100%;"></div> --}}
-                <div class="my-5 {{ $theme . '-theme' }}">
+                <div class="my-5">
                     <div class="explore-nft-header">
                         <h2>You Might Be Interested At</h2>
 
@@ -460,8 +460,7 @@ height: 64px !important;
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
                                     <a href="{{ url('/overview', [$datass->slug]) }}" style="text-decoration: none;">
 
-                                        <div class=" mt-3 mx-3" style="    border-radius: 15px;
-                                            border: 1px solid rgba(0, 0, 0, 0.1);">
+                                        <div class=" mt-3 mx-3 explore-card">
                                             <div class="explore-card-img"
                                                 style="    border-radius: 15px;border: 1px solid rgba(0, 0, 0, 0.1);">
                                                 <img style="    max-height: 190px;min-width: 250px;max-width: 250px;min-height: 190px;"
@@ -506,126 +505,8 @@ height: 64px !important;
 
     <!--home page end-->
 
-    <!--footer blcok start-->
-    <div class="container-fluid footer {{ $theme . '-theme' }}">
-        <div class="row p-1 p-sm-5 p-lg-2 p-xl-5">
-            <div class="col-lg-4 col-md-6 col-sm-12 py-3 py-md-5 d-flex align-items-center justify-content-center">
-                <a href="{{ asset('/') }}" class="footer-logo ">
-                    <img src="{{ asset('/img/logo.png') }}" />
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 py-3 py-md-5 px-xl-5 px-1">
-                <div class="get-touch">
-                    <h3> Get In Touch</h3>
-                </div>
-                <div class="footer-icons my-3">
-                    <a href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-facebook-messenger"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-                <div class="add-newletter mt-4">
-                    <p>Get the latest crypto news, updates, and reports by subscribing to our free newsletter.</p>
-                    <form>
-                        <input type="email" placeholder="Enter Your Email" class="form-control" />
-                        <input type="submit" class="footer-submit mt-3" />
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 py-3 py-md-5">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="footer-links px-4 px-lg-2 px-xl-4">
-                            <div>
-                                <h4 class="pb-2 "> Links</h4>
-                                <a href="#">
-                                    Home
-                                </a>
-                                <br />
-                                <br />
-                                <a href="#">
-                                    About Us
-                                </a>
-                                <br />
-                                <br />
-                                <a href="#">
-                                    contact Us
-                                </a>
-                                <br />
-                                <br />
-                                <a href="#">
-                                    Upcoming
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="footer-links px-4 px-lg-2 px-xl-4">
-                            <div>
-                                <h4 class="pb-2"> Supports</h4>
-                                <a href="#">
-                                    FQA
-                                </a>
-                                <br />
-                                <br />
-                                <a href="#">
-                                    Terms and Conditions
-                                </a>
-                                <br />
-                                <br />
-                                <a href="#">
-                                    Privacy Policy
-                                </a>
-                                <br />
-                                <br />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- <div class="col-lg-4 col-md-6 col-sm-6 py-3 py-md-5">
-
-                                                                        </div> -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Description</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body" style="    overflow: scroll;max-height: 209px;">
-                            {{ $data1->description }}
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--footer block end-->
-
+     <!--Footer Here-->
+     @include('user.layout.footer');
     <script>
         window.onload = function() {
 

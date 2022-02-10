@@ -41,7 +41,7 @@
                             <input type="password" class="form-control" id="exampleInputPassword1"
                                 placeholder="Password">
                         </div>
-                        <div class="d-flex justify-content-between mx-1">
+                        <div class="d-flex justify-content-start align-items-center mx-1">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
