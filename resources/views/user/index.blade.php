@@ -45,8 +45,8 @@
                                             <div class="header-card-head">
                                                 <h5><i class="fas fa-chart-line mr-2 text-warning"></i>MarketCap
                                                     change(24H)</h5>
-                                                <button>More <span class="ml-2 text-info"> ></span></button>
-                                            </div>
+
+                                                </div>
                                             <div class="header-card-body">
                                                 <ul class="list-group">
                                                     <li
@@ -138,7 +138,6 @@
                                             <div class="header-card-head">
                                                 <h5><i class="fas fa-funnel-dollar mr-2 text-primary"></i>Buyer (24H)
                                                 </h5>
-                                                <button>More <span class="ml-2 text-muted"> ></span></button>
                                             </div>
                                             <div class="header-card-body">
                                                 <ul class="list-group">
@@ -181,7 +180,6 @@
                                             <div class="header-card-head">
                                                 <h5><i class="fas fa-exchange-alt mr-2 text-danger"></i></i>Volume (24H)
                                                 </h5>
-                                                <button>More <span class="ml-2 text-muted"> ></span></button>
                                             </div>
                                             <div class="header-card-body">
                                                 <ul class="list-group">
@@ -332,9 +330,7 @@
                 <div class="top-collection">
                     <div class="block-header d-flex justify-content-between align-items-center">
                         <h3>Top Collection</h3>
-                        <div>
-                            <button>Read More</button>
-                        </div>
+
                     </div>
                     <div class="block-body">
                         <div class="row mb-3">
@@ -401,9 +397,7 @@
                 <div class="explore-nft">
                     <div class="explore-nft-header">
                         <h2>Explore NFTs</h2>
-                        <div>
-                            <button>Read More</button>
-                        </div>
+
                     </div>
                     <div class="explore-nftbody">
                         <div class="row">
@@ -416,7 +410,6 @@
                                         <div class="explore-card-img">
                                             <img
                                            style="    max-height: 190px;min-width: 240px;max-width: 240px;min-height: 190px;" src=" @if (isset($datass->large_image_url)){{$datass->large_image_url}} @else https://lh3.googleusercontent.com/6ryiJWWrm27TkbXYEhfxfhrA5H6eqUQXih8UQSeHx5pwVFdS3jJTBwNXi_9N3EP2pO-czkyKGqV9Pnwvjn8qIAWeWSkkFEpMJlfH=s120  @endif " />
-                                            <i class="fas fa-ellipsis-h"></i>
                                         </div>
                                         <div class="explore-card-body m-3">
                                             <h5 style="line-height: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">{{$datass->name}}</h5>
@@ -448,7 +441,7 @@
             </div>
         </div>
 
-        
+
     </div>
     <!--home page end-->
 
