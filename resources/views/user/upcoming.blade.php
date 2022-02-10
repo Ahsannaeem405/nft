@@ -105,10 +105,18 @@
     <!--From Pop Up-->
     <div id="add-project">
         <div class="container p-0">
+        
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
+                <div class="row"  >
+                    <div class="col-12 text-end">
+                    <span class="close-popup float-right" onclick={closeForm()}>
+                    <img src="{{asset('img/close2.png')}}" alt="clode-img"/>
+                    </span>
+                    </div>
+                        </div>
                     <div class="add-project-form my-3 px-2 px-sm-4 py-4" >
-
+                    
                         <h2 class="mb-3 mb-lg-4">Upcoming NFT Sales Form</h2>
                         <form action="{{url('upcoming/save')}}" method="POST" style="text-align: start;">
                             @csrf

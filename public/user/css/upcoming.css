@@ -151,3 +151,13 @@ background-color: rgba(0, 0, 0, 0.5);
     color: white;
     background-color: #343434;
 }
+.close-popup{
+    height: 35px;
+    width: 35px;
+}
+.close-popup img{
+    width: 100%;
+    height: auto;
+    background-color: White;
+    border-radius: 25px;
+}
