@@ -28,8 +28,7 @@
                                     account to start accepting payments and sending money with 6 million people just
                                     like you.
                                 </p>
-                                <a>
-                                    <button class="get-start">
+                                <a href="{{url('upcoming')}}">                                    <button class="get-start">
                                         Get Start
                                     </button>
 
