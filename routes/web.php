@@ -43,6 +43,10 @@ Route::post('/upcoming/save', [App\Http\Controllers\UpcomingController::class, '
 
 Route::get('/upcoming', [App\Http\Controllers\UpcomingController::class, 'upcoming']);
 
+Route::post('/add/contact', [App\Http\Controllers\UpcomingController::class, 'add_contact']);
+
+
+
 
 Route::group(['middleware' => 'auth'], function () {
 

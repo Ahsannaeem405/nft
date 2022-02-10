@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Models\Newsletter;
 use App\Models\Upcoming;
 use App\Models\User;
@@ -18,6 +19,26 @@ class UpcomingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+
+
+
+    function add_contact(Request $request){
+
+        $news = new Contact();
+
+        $news->email = $request->email;
+        $news->name = $request->name;
+        $news->lname = $request->lname;
+        $news->subject = $request->subject;
+        $news->address = $request->address;
+        $news->save();
+        return back()->with('success',  'Submitted Successfully');
+
+
+}
+
 
 
      public function detail(){
