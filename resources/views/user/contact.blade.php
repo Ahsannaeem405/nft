@@ -6,6 +6,12 @@
     <!--Nav Bar end-->
     <!--contact us start-->
     <div class="container-fluid my-5">
+
+        @if(session()->has('success'))
+    <div class="alert alert-success">
+        {{ session()->get('success') }}
+    </div>
+@endif
         <div class="row mt-5 px-sm-5 s1 px-1 d-flex justify-content-center">
             <div class="col-md-10 s2 col-lg-7 py-4 px-1 px-xl-5">
                 <div class="contact-help mx-2 mx-md-5 mb-4">
@@ -64,31 +70,32 @@
             </div>
             <div class="col-md-8 col-lg-5 px-0 col-xl-4">
                 <div class="contact-form py-5 px-2 px-md-5">
-                    <form>
+                    <form action="{{url('add/contact')}}" method="POST">
+                        @csrf
                         <div class="form-row">
                           <div class="form-group col-md-6">
                             <label for="inputEmail4">First Name</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="First Name">
+                            <input type="text" class="form-control" name="name" id="inputEmail4" placeholder="First Name">
                           </div>
                           <div class="form-group col-md-6">
                             <label for="inputPassword4">Last Name</label>
-                            <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name">
+                            <input type="text" class="form-control" name="lname" id="inputPassword4" placeholder="Last Name">
                           </div>
                         </div>
                         <div class="form-group">
                           <label for="inputAddress">Email Address</label>
-                          <input type="email" class="form-control" id="inputAddress" placeholder="Your Email ">
+                          <input type="email" class="form-control" name="email"  id="inputAddress" placeholder="Your Email ">
                         </div>
                         <div class="form-group">
                           <label for="inputAddress2">Subject</label>
-                          <input type="text" class="form-control" id="inputsubject" placeholder="Subject">
+                          <input type="text" class="form-control" name="subject"  id="inputsubject" placeholder="Subject">
                         </div>
                         <div class="form-group">
                             <label for="inputmessage">Message</label>
-                            <textarea id="w3review" name="w3review" id="inputmessage" class="form-control" rows="7" cols="100">Your message!</textarea>
+                            <textarea id="w3review" name="w3review" name="address"  id="inputmessage" class="form-control" rows="7" cols="100">Your message!</textarea>
                           </div>
 
-                        <button type="submit" class="btn btn-primary w-100 mt-3">Send Message</button>
+                        <input type="submit" class="btn btn-primary w-100 mt-3" value="Send Message" >
                       </form>
                 </div>
             </div>

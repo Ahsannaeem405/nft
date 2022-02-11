@@ -6,87 +6,35 @@
                     <img src="{{asset('/img/logo.png')}}" />
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 py-3 py-md-5 px-xl-5 px-1">
-                <div class="get-touch">
-                    <h3> Get In Touch</h3>
-                </div>
-                <div class="footer-icons my-3">
-                    <a href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-facebook-messenger"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="#">
-                    <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-                <div class="add-newletter mt-4">
-                    <p>Get the latest crypto news, updates, and reports by subscribing to our free newsletter.</p>
-                    <form>
-                        <input type="email" placeholder="Enter Your Email" class="form-control" />
-                        <input type="submit" class="footer-submit mt-3" />
-                    </form>
-                </div>
-            </div>
+
             <div class="col-lg-4 col-md-12 col-sm-12 py-3 py-md-5">
                 <div class="row">
                     <div class="col-6">
                         <div class="footer-links px-4 px-lg-2 px-xl-4">
                             <div>
                                 <h4 class="pb-2 "> Links</h4>
-                                <a href="#">
+                                <a href="{{url('/')}}">
                                     Home
                                 </a>
                                 <br/>
                                 <br/>
-                                <a href="#">
-                                    About Us
+                                <a href="{{url('newsletter')}}">
+                                    Newsletter
                                 </a>
                                 <br/>
                                 <br/>
-                                <a href="#">
+                                <a href="{{url('contact')}}">
                                     contact Us
                                 </a>
                                 <br/>
                                 <br/>
-                                <a href="#">
+                                <a href="{{url('upcoming')}}">
                                     Upcoming
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="footer-links px-4 px-lg-2 px-xl-4">
-                                <div>
-                                    <h4 class="pb-2"> Supports</h4>
-                                    <a href="#">
-                                        FQA
-                                    </a>
-                                    <br/>
-                                    <br/>
-                                    <a href="#">
-                                        Terms and Conditions
-                                    </a>
-                                    <br/>
-                                    <br/>
-                                    <a href="#">
-                                        Privacy Policy
-                                    </a>
-                                    <br/>
-                                    <br/>
-                                </div>
-                        </div>
-                    </div>
+
                 </div>
 
             </div>
