@@ -218,7 +218,7 @@ height: 64px !important;
 
                                                         </p>
 
-                                                        <h5 style="    margin-bottom: 3px;">
+                                                        <h5 style="    margin-bottom: 3px; Color:black">
                                                             ${{ $feat->unit_price }}</h5>
 
                                                     </div>
@@ -258,7 +258,7 @@ height: 64px !important;
 
                                                         </p>
 
-                                                        <h5 style="    margin-bottom: 3px;">
+                                                        <h5 style="    margin-bottom: 3px; color:black">
                                                             ${{ number_format((float) $feat->unit_price, 4, '.', '') }}
                                                         </h5>
                                                         <span style="color: #5cc489;    font-weight: 700;">+
