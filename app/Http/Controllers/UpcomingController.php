@@ -105,20 +105,30 @@ return redirect('/admin')->with('success',  'Submitted Successfully');
     $feat = Upcoming::where('status', 1)->where('fetured_status', 1)->get();
      $data=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=6');
         $data=json_decode($data->body());
-
-
-        $data1=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=12');
+        $randomId       =   rand(1,20000);
+//dd($randomId);
+        $data1=Http::get('https://api.opensea.io/api/v1/collections?offset='.$randomId.'&limit=300');
         $data1=json_decode($data1->body());
-// dd($data);
-
-        return view('user.index', compact('data', 'data1', 'feat'));
+// dd($data1);
+        $collection = collect($data1->collections);
+        $unique = $collection->unique('name');
+        // dd($unique);
+       // dd($collection->count());
+$data1=$unique->random(15);
+return view('user.index', compact('data', 'data1', 'feat'));
 
 
     }
 
 
 
-
+public function load_more($id)
+{
+    $data1=Http::get('https://api.opensea.io/api/v1/collections?offset='.$id.'&limit=50');
+    $data1=json_decode($data1->body());
+    $data1= collect($data1->collections);
+    return view('user.add_more', compact('data1'));
+}
 
 
 
@@ -318,15 +328,17 @@ return view('admin.edit');
 
 
     public function overview($slug){
-
-
-
         $data=Http::get('https://api.opensea.io/api/v1/collection/'.$slug.'');
         $data=json_decode($data->body());
 
-        // dd($data->collection);
+        // dd($data1->collection);
         $data1 = $data->collection;
-       $add = $data1->primary_asset_contracts[0]->address;
+       if (isset($data1->primary_asset_contracts[0]->address)) {
+        $add = $data1->primary_asset_contracts[0]->address;
+       }else{
+        $add = null;
+       }
+
 
         $data12=Http::get('https://api.opensea.io/api/v1/collections?asset_owner=0x495f947276749Ce646f68AC8c248420045cb7b5e&offset=0&limit=12');
         $data12=json_decode($data12->body());
@@ -336,7 +348,7 @@ return view('admin.edit');
 
 
         // dd($add3);
-
+// dd($data1);
 
         return view('user.detail', compact('data1', 'data12'));
 

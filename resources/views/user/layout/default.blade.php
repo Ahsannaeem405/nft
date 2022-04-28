@@ -33,14 +33,10 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
     <script src="https://kit.fontawesome.com/9838783293.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-    <!-- <script src="{{asset('/js/dark-mode-switch.min.js')}}"></script> -->
-    <!-- <script src="{{asset('/js/dark-mode-switch.js')}}"></script> -->
 
     <title>Buy and sell crypto</title>
      <style>
-         
+
         body {
             color: black;
             background-color: white;
@@ -48,7 +44,7 @@
         .dark-theme {
             color: white !important;
             background-color: #272727;
-        } 
+        }
         .dark-theme div ul li a {
             color: white !important;
         }
@@ -115,7 +111,7 @@
         }
         .dark-theme .row .col-12 .headerblock .row .col-lg-6 {
             color: white  !important;
-            background-color: transparent !important; 
+            background-color: transparent !important;
         }
         .dark-theme .headerblock .headerblock-right .owl-theme .owl-item .header-card {
             background-color: #343434 !important;
@@ -143,7 +139,7 @@
         .dark-theme .headerblock .headerblock-right .owl-theme .owl-item .header-card .header-card-body .list-group .list-group-item:first-child{
             border-radius: 0px !important;
         }
-       
+
         .dark-theme .top-collection-main .top-collection{
             background-color: #343434 ;
             box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
@@ -200,31 +196,31 @@
             box-shadow:0px 0px 8px rgba(255,255,255,0.5)
         }
 
-        /* body{         
-        text-align:center; 
-        } 
-        
-       
-        .mode { 
-            float:right; 
+        /* body{
+        text-align:center;
+        }
+
+
+        .mode {
+            float:right;
             margin-top: 20px;
             margin-right: 20px;
-        } 
-        .change { 
-            cursor: pointer; 
-            border: 1px solid #555; 
-            border-radius: 10%; 
-            width: 20px; 
-            text-align: center; 
-            padding: 8px; 
-            margin-left: 8px; 
-        } 
-        .dark{ 
-            background-color: #222; 
-             
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 10%;
+            width: 20px;
+            text-align: center;
+            padding: 8px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+
         } */
-        
-    </style> 
+
+    </style>
 </head>
 
 <body class="{{ $theme . '-theme' }}" >
@@ -232,16 +228,9 @@
 @yield('content')
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous">
-
-</script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
@@ -307,7 +296,7 @@
     }
     });
 </script> -->
-<script> 
+<script>
 var toggled = false;
 
 var toggle = document.getElementById('theme-check');
@@ -332,7 +321,7 @@ function chnageTheme(obj){
       //  fot.classList.add(dark_theme_class);
         // toggle_icon.innerHTML = "light theme";
         setCookie('theme', 'dark');
-        
+
     }
     else{
         body.classList.remove(dark_theme_class);
@@ -340,7 +329,7 @@ function chnageTheme(obj){
       //  back.classList.remove(dark_theme_class);
         //fot.classList.remove(dark_theme_class);
         // toggle_icon.innerHTML = "dark theme";
-       
+
         setCookie('theme', 'light');
     }
 }
@@ -353,8 +342,8 @@ function setCookie(name, value) {
     document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
 
-       
-</script>  
+
+</script>
 
 
 
@@ -362,13 +351,13 @@ function setCookie(name, value) {
 
 </html>
 
-<!-- // $( ".change" ).on("click", function() { 
-        //     if( $( "body" ).hasClass( "dark" )) { 
-        //         $( "body" ).removeClass( "dark" ); 
-        //         $( ".change" ).text( "OFF" ); 
-        //     } else { 
-        //         $( "body" ).addClass( "dark" ); 
-        //         $( ".change" ).text( "ON" ); 
-        //     } 
+<!-- // $( ".change" ).on("click", function() {
+        //     if( $( "body" ).hasClass( "dark" )) {
+        //         $( "body" ).removeClass( "dark" );
+        //         $( ".change" ).text( "OFF" );
+        //     } else {
+        //         $( "body" ).addClass( "dark" );
+        //         $( ".change" ).text( "ON" );
+        //     }
         // });  -->
 <!-- this is comments for remember -->

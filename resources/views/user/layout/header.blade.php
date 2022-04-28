@@ -24,7 +24,7 @@
             <li class="nav-item mx-2">
                 <a class="nav-link" href="{{url('/upcoming')}}">Upcoming</a>
             </li>
-
+           
             {{-- <li class="nav-item mx-2">
                 <a class="nav-link" href="{{url('/login')}}">Login</a>
             </li> --}}

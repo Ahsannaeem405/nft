@@ -333,9 +333,10 @@
                     </div>
                     <div class="block-body">
                         <div class="row mb-3">
+
                             @foreach ( $data1 as $datass )
 
-{{-- @dd($datass) --}}
+
                             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 p-0">
                                 <a href="{{url('/overview',[$datass->slug])}}" style="text-decoration: none;">
 
@@ -345,8 +346,14 @@
                                             src=" @if(isset( $datass->banner_image_url)) {{ $datass->banner_image_url}} @else https://helostatus.com/wp-content/uploads/2021/09/HD-WhatsApp-profile.jpg  @endif" />
                                         <div class="card-bio ml-1" style="width: 148px;line-height: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;">
                                             {{$datass->name}}<br>
-                                            <span>{{$datass->primary_asset_contracts[0]->symbol}}</span>
-                                        </div>
+
+                                            <span>
+                                                @isset($datass->primary_asset_contracts[0]->symbol)
+
+                                                {{$datass->primary_asset_contracts[0]->symbol}}
+                                                @endisset
+                                                </span>
+                                                       </div>
                                         <p class="card-title">
                                             <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg" class="project-card_icon__3yC3z">
@@ -399,9 +406,9 @@
 
                     </div>
                     <div class="explore-nftbody">
-                        <div class="row">
-                            @foreach ( $data1 as $datass )
+                        <div class="row" id="incresing_here">
 
+                            @foreach ( $data1 as $datass )
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-0">
                                 <a href="{{url('/overview',[$datass->slug])}}" style="text-decoration: none;">
 
@@ -436,12 +443,47 @@
 
                         </div>
                     </div>
+<div ></div>
+                    <div class="mt-3" style="text-align: center;">
+                        <button class="btn btn-success Load_more">
+                            Load More
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
 
 
     </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var ofst_val=1;
+            $(document).on( 'click', '.Load_more', function() {
+
+
+            $.ajax({
+                url: "{{ url('load_more/') }}" + '/' + ofst_val,
+                type: 'GET',
+                success: function(response)
+                {
+
+                    ofst_val=ofst_val + 1;
+
+                    $('#incresing_here').append(response);
+                }
+            });
+
+           });
+        });
+    </script>
+
+
+
     <!--home page end-->
 
     <!--Footer Here-->

@@ -48,7 +48,7 @@ height: 64px !important;
                 <div class="featured-details-card" style="border-radius: 20px;padding: 20px;">
                     <div class="block-body">
                         <div class="row mb-3">
-                            
+
                             <div class="col-xl-7 col-lg-7 col-12 p-0">
                                 <div class="mt-4 mx-2" style="    padding: 10px;">
                                     <div class="row">
@@ -138,7 +138,11 @@ height: 64px !important;
                                                     </div>
                                                     <div class="col-12" style="    margin-top: -11px;">
                                                         <span
-                                                            style="    border-radius: 6px;font-size: 14px;padding: 3px 10px; color: #269958;  ">{{$data1->primary_asset_contracts[0]->symbol}}
+                                                            style="    border-radius: 6px;font-size: 14px;padding: 3px 10px; color: #269958;  ">
+                                                            @isset($data1->primary_asset_contracts[0]->symbol)
+                                                            {{$data1->primary_asset_contracts[0]->symbol}}
+                                                            @endisset
+
                                                         </span>
                                                     </div>
                                                 </div>
@@ -161,6 +165,7 @@ height: 64px !important;
                                                     style="   ont-weight: bold;  font-size: 14px;   margin-top: -4px; color:#535572">
                                                     Share</p>
                                             </a>
+
                                         </div>
                                     </div>
 
@@ -390,58 +395,254 @@ height: 64px !important;
                 </div>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            const labels = [
+              'January',
+              'February',
+              'March',
+              'April',
+              'May',
+              'June',
+            ];
+
+
+
+            const data = {
+                labels: labels,
+                datasets: [{
+                  label: 'Data Here',
+                  data: [65, 59, 56, 50, 56, 55],
+                  fill: false,
+                  borderColor: 'rgb(75, 192, 192)',
+                  tension: 0.1
+                }]
+              };
+
+            const config = {
+                type: 'line',
+                data: data,
+              };
+
+    const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+          </script>
+
+
+
+
+
+
+
 
         <div class="row">
             <div class="col-12" style="margin-top: 35px;">
-                <div class="col-xl-5 col-lg-5 col-md-8 col-12">
-                    <div class="row">
+                <div class="col-md-12 col-12">
 
 
-                        <div class="col-md-3 col-6" style="padding-bottom: 10px;">
-                            <button style="  background: #5a66f9;  border-color: #5a66f9;                             width: 100%;
-                                        border-radius: 9px;" class="btn btn-primary"> Overview</button>
+
+
+
+
+
+<div class="text-center">
+
+    <ul class="nav nav-pills mb-3" style="display: flex;
+    justify-content: center;" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link pl-4 pr-4 active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Overview</a>
+    </li>
+    {{--  <li class="nav-item">
+      <a class="nav-link pl-3 pr-3" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+
+        <span class="new" style="
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 17px;
+            color: #fff;
+            background: #ff664f;
+            border-radius: 4px;
+            border-bottom-left-radius: 0;
+            padding: 0 4px;">New!</span>
+
+      </a>
+    </li>  --}}
+
+    <li class="nav-item">
+        <a class="nav-link pr-3 pl-3" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Holder</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link pl-3 pr-3" id="pills-contact-tab" data-toggle="pill" href="#pills-activity" role="tab" aria-controls="pills-contact" aria-selected="false">Activity</a>
+      </li>
+
+  </ul>
+
+</div>
+
+
+
+
+
+
+
+                      <div class="tab-content" id="pills-tabContent" style="margin-left:200px;margin-right:200px">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <h3 class="mb-4 text-center">Created by {{ $data1->name}}</h3>
+
+                            <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"  class="text-center">
+{{--  @dd($data1->stats->total_volume)  --}}
+{{$data1->stats->total_volume}}K<br>
+
+                                        Items</th>
+                                    <th scope="col"  class="text-center">
+                                        {{$data1->stats->num_owners}}<br>
+                                        Owners</th>
+                                    <th scope="col" class="text-center">
+
+@if ($data1->stats->floor_price==null)
+0<br>
+@else
+{{$data1->stats->floor_price}}<br>
+@endif
+
+                                        Floor Price</th>
+                                    <th scope="col"  class="text-center">
+                                        {{$data1->stats->one_day_volume}}K<br>
+                                        Volume Traded</th>
+                                  </tr>
+                                </thead>
+
+                              </table>
+
+
+<p class="a-2 text-center">
+  {{--  @dd($data1)  --}}
+@if (isset($data1->primary_asset_contracts->description))
+{{ $data1->primary_asset_contracts->description }}
+@else
+{{ 'No Description Found...' }}
+@endif
+
+</p>
+
 
                         </div>
-                        <div class="col-md-3 col-6" style="padding-bottom: 10px;">
-                            <button style="    background: white;
-                                    width: 100%;
-                                    border-radius: 9px;
-                                    color: #5a66f9;
-                                    border-color: white;" class="btn btn-primary"> NFT
 
 
-                            </button>
-                            <span class="new" style="position: absolute;top: -7px;right: 2px;
-                                font-weight: 700;
-                                font-size: 12px;
-                                line-height: 17px;
-                                color: #fff;
-                                background: #ff664f;
-                                border-radius: 4px;
-                                border-bottom-left-radius: 0;
-                                padding: 0 4px;">New!</span>
+                        <div class="tab-pane fade" id="pills-activity" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-light" style="box-shadow: 0px 0px 0px rgb(0 0 0 / 50%);padding: 0px;z-index:0">
+
+
+
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul >
+
+            <div class="dropdown show">
+  <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<i id="dropdown_heading">One Day</i>
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" id="one_day" href="#">One Day</a>
+    <a class="dropdown-item" id="two_day" href="#">Seven Day</a>
+    <a class="dropdown-item" id="three_day" href="#">Thirty Day</a>
+  </div>
+</div>
+        </ul>
+
+
+
+    </div >
+
+
+
+
+
+
+
+</nav>
+
+       <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+
+                                    <th scope="col" class="day_volum text-center">
+                                        <i id="days_avg_price">{{ $data1->stats->one_day_average_price }} <br>One Day </i> <br>
+                                        Avg. Price</th>
+                                    <th scope="col"  class="day_avg text-center">
+                                        <i id="days_volume">{{ $data1->stats->one_day_volume }} <br>One Day </i><br>
+                                        Volume</th>
+                                  </tr>
+                                </thead>
+
+                              </table>
+
+
+
+
+
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    {{--  <div class="row">
+        <div class="col-8" style="margin-top: 35px;height:auto">
+            <div>
+                <canvas id="myChart"></canvas>
+              </div>
+        </div>
+    </div>  --}}
+
+
+
+
+
+
+
                         </div>
 
-                        <div class="col-md-3 col-6" style="padding-bottom: 10px;">
-                            <button style="    background: white;
-                                    width: 100%;
-                                    border-radius: 9px;
-                                    color: #5a66f9;
-                                    border-color: white;" class="btn btn-primary"> Holder </button>
-
-                        </div>
-                        <div class="col-md-3 col-6" style="padding-bottom: 10px;">
-                            <button style="    background: white;
-                                    width: 100%;
-                                    border-radius: 9px;
-                                    color: #5a66f9;
-                                    border-color: white;" class="btn btn-primary"> Activitys </button>
-
-                        </div>
 
 
 
-                    </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
 
@@ -726,5 +927,37 @@ height: 64px !important;
             alert("Copied the text");
 
         }
+
+
+
+        $(document).ready(function () {
+
+            $(document).on( 'click', '#one_day', function(e) {
+                e.preventDefault();
+
+                $('#days_avg_price').empty().append({{ $data1->stats->one_day_average_price }}+"<br>One Day ");
+                $('#days_volume').empty().append({{ $data1->stats->one_day_volume }}+"<br>One Day ");
+                $('#dropdown_heading').empty().append("One Day");
+
+            });
+
+        $(document).on( 'click', '#two_day', function(e) {
+            e.preventDefault();
+
+            $('#days_avg_price').empty().append({{ $data1->stats->seven_day_average_price }}+"<br>Seven Days ");
+            $('#days_volume').empty().append({{ $data1->stats->seven_day_volume }}+"<br>Seven Days ");
+            $('#dropdown_heading').empty().append("Seven Day");
+        });
+
+    $(document).on( 'click', '#three_day', function(e) {
+        e.preventDefault();
+
+        $('#days_avg_price').empty().append({{ $data1->stats->thirty_day_average_price }}+"<br>Thirty Day ");
+        $('#days_volume').empty().append({{ $data1->stats->thirty_day_volume }}+"<br>Thirty Days ");
+        $('#dropdown_heading').empty().append("Thirty Day");
+    });
+
+    });
+
     </script>
 @endsection

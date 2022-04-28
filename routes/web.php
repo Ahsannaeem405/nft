@@ -21,6 +21,7 @@ ded by the RouteServiceProvider within a group which
 // });
 
 Route::get('/', [App\Http\Controllers\UpcomingController::class, 'view_index']);
+Route::get('load_more/{id}', [App\Http\Controllers\UpcomingController::class, 'load_more']);
 
 Route::get('/detail', [App\Http\Controllers\UpcomingController::class, 'detail']);
 
